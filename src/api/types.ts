@@ -1,25 +1,64 @@
 /**
- * Shared types for the input pipeline.
+ * Wire types mirroring backend/app/schemas.py.
  *
- * Patch coordinates use (row, col) with origin at the top-left.
- * For DeiT-Tiny on 224x224 images, the grid is 14x14, so row/col
- * range over [0, 14).
+ * Keep these in sync manually. If the schemas grow, consider
+ * generating from openapi.json instead.
  */
 
-export interface Patch {
-  /** 0..gridSize-1, top to bottom */
-  row: number
-  /** 0..gridSize-1, left to right */
-  col: number
+import type { Patch } from '../input/types'
+export type { Patch }
+
+// ---------- HTTP /upload ----------
+
+export interface UploadResponse {
+  image_hash: string
+  size: number
 }
 
-/** Discrete event emitted by MouseToPatch when the active patch changes. */
-export type PatchEvent =
-  | { kind: 'enter'; patch: Patch }
-  | { kind: 'leave' }
+// ---------- WS /morph: client → server ----------
 
-/** State exposed by DwellDetector. Drives both UI feedback and the future backend trigger. */
-export type GazeStatus =
-  | { kind: 'off_canvas' }
-  | { kind: 'scanning'; patch: Patch; enteredAt: number }
-  | { kind: 'dwelling'; patch: Patch; firedAt: number }
+export interface RequestMessage {
+  type: 'request'
+  request_id: string
+  image_hash: string
+  patch: Patch
+}
+
+export interface CancelMessage {
+  type: 'cancel'
+  request_id: string
+}
+
+export type ClientMessage = RequestMessage | CancelMessage
+
+// ---------- WS /morph: server → client ----------
+
+export interface ResultMessage {
+  type: 'result'
+  request_id: string
+  image_hash: string
+  patch: Patch
+  new_class_id: number
+  new_class_name: string
+  top_3_channel_ids: number[]
+  saliency_url: string
+  merged_image_url: string
+}
+
+export interface ErrorMessage {
+  type: 'error'
+  request_id: string | null
+  message: string
+}
+
+export interface PrecomputeProgressMessage {
+  type: 'precompute_progress'
+  image_hash: string
+  done: number
+  total: number
+}
+
+export type ServerMessage =
+  | ResultMessage
+  | ErrorMessage
+  | PrecomputeProgressMessage

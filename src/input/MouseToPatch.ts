@@ -1,4 +1,4 @@
-import type { Patch, PatchEvent } from '../api/types'
+import type { Patch, PatchEvent } from './types'
 
 /**
  * MouseToPatch

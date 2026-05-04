@@ -1,4 +1,4 @@
-import type { Patch, PatchEvent, GazeStatus } from '../api/types'
+import type { Patch, PatchEvent, GazeStatus } from './types'
 
 /**
  * DwellDetector

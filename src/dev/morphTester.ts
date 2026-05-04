@@ -74,6 +74,13 @@ async function applyFilter(
   if (!ctx) throw new Error('morphTester: 2d context unavailable')
   ctx.filter = filter
   ctx.drawImage(img.bitmap, 0, 0)
-  const bitmap = await createImageBitmap(c)
-  return { bitmap, size: bitmap.width, name }
+  const blob = await canvasToBlob(c)
+  const bitmap = await createImageBitmap(blob)
+  return { bitmap, blob, size: bitmap.width, name }
+}
+
+async function canvasToBlob(canvas: HTMLCanvasElement): Promise<Blob> {
+  return new Promise((resolve, reject) => {
+    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('toBlob null'))), 'image/png')
+  })
 }

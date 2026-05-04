@@ -1,5 +1,5 @@
 import type { UploadedImage } from '../upload/ImageUploader'
-import type { Patch } from '../api/types'
+import type { Patch } from '../input/types'
 
 /**
  * RightPanel

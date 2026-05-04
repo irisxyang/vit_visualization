@@ -198,10 +198,10 @@ export class MorphCanvas {
    * Set the target the morph is chasing. The current displayed state
    * keeps moving toward it smoothly. Calling this mid-morph redirects.
    */
-  setTarget(img: UploadedImage): void {
-    this.uploadStandardized(this.targetTex, img.bitmap)
+  setTarget(source: UploadedImage | ImageBitmap): void {
+    const bitmap = source instanceof ImageBitmap ? source : source.bitmap
+    this.uploadStandardized(this.targetTex, bitmap)
   }
-
   /** Most recent source bitmap (i.e. last `setImage` arg). */
   getCurrentBitmap(): ImageBitmap | null {
     return this.currentBitmap

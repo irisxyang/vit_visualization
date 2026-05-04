@@ -1,4 +1,4 @@
-import type { GazeStatus } from '../api/types'
+import type { GazeStatus } from '../input/types'
 
 /**
  * DwellProgressBar
