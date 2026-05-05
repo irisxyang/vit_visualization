@@ -1,11 +1,16 @@
 """
 WS /morph — bidirectional protocol for patch processing requests.
 
-Concurrency model:
-  - one connection can have multiple requests in flight
-  - each request runs in its own asyncio.Task
-  - a cancel message cancels the matching task by request_id
-  - cache hits are returned synchronously without spawning a task
+On a request:
+  1. Look up the patch's precomputed metadata in memory (O(1)).
+  2. Render the merged image via the runtime blending function.
+     Idempotent and disk-cached, so repeat hovers are near-instant.
+  3. Send back a ResultMessage referencing both the precomputed display
+     saliency and the freshly-rendered merged image.
+
+Per-request asyncio.Tasks are still used so cancellation works cleanly
+when the user moves to a new patch mid-blend. The blend itself runs in
+asyncio.to_thread so it doesn't block the event loop.
 """
 
 from __future__ import annotations
@@ -15,14 +20,16 @@ import asyncio
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from pydantic import TypeAdapter, ValidationError
 
-from .. import cache, pipeline_stub
+from .. import precomputed_loader, storage
+from ..pipeline.blending import render_merged
 from ..schemas import (
     CancelMessage,
     ClientMessage,
     ErrorMessage,
+    Patch,
     RequestMessage,
+    ResultMessage,
 )
-from ..ws_manager import manager
 
 router = APIRouter()
 
@@ -32,9 +39,7 @@ _client_msg = TypeAdapter(ClientMessage)
 @router.websocket("/morph")
 async def morph(ws: WebSocket) -> None:
     await ws.accept()
-    await manager.attach(ws)
 
-    # request_id -> task for in-flight pipeline runs
     in_flight: dict[str, asyncio.Task] = {}
 
     try:
@@ -57,7 +62,6 @@ async def morph(ws: WebSocket) -> None:
     finally:
         for task in in_flight.values():
             task.cancel()
-        await manager.detach(ws)
 
 
 async def _handle_request(
@@ -65,25 +69,41 @@ async def _handle_request(
     msg: RequestMessage,
     in_flight: dict[str, asyncio.Task],
 ) -> None:
-    await manager.register_interest(ws, msg.image_hash)
-
-    # cache hit: return immediately, no task needed
-    cached = cache.get(msg.image_hash, msg.patch.row, msg.patch.col)
-    if cached is not None:
-        result = cached.model_copy(update={"request_id": msg.request_id})
-        await ws.send_json(result.model_dump())
+    # validate the patch is in our precomputed dataset
+    patch_data = precomputed_loader.get_patch(msg.image_id, msg.patch.row, msg.patch.col)
+    if patch_data is None:
+        await ws.send_json(
+            ErrorMessage(
+                request_id=msg.request_id,
+                message=f"unknown image_id {msg.image_id!r} or patch ({msg.patch.row}, {msg.patch.col})",
+            ).model_dump()
+        )
         return
 
-    # otherwise spawn a worker task
     async def worker() -> None:
         try:
-            result = await pipeline_stub.process(msg.image_hash, msg.patch.row, msg.patch.col)
-            cache.put(msg.image_hash, msg.patch.row, msg.patch.col, result)
-            stamped = result.model_copy(update={"request_id": msg.request_id})
-            await ws.send_json(stamped.model_dump())
+            # blending is CPU-bound; run off the event loop
+            await asyncio.to_thread(
+                render_merged,
+                msg.image_id,
+                msg.patch.row,
+                msg.patch.col,
+                patch_data,
+            )
+
+            result = ResultMessage(
+                request_id=msg.request_id,
+                image_id=msg.image_id,
+                patch=Patch(row=msg.patch.row, col=msg.patch.col),
+                new_class_id=patch_data.class_id,
+                new_class_name=patch_data.class_name,
+                top_3_channel_ids=list(patch_data.top_3_channel_ids),
+                saliency_url=patch_data.saliency_display_url,
+                merged_image_url=storage.merged_url(msg.image_id, msg.patch.row, msg.patch.col),
+            )
+            await ws.send_json(result.model_dump())
         except asyncio.CancelledError:
-            # cancellation is normal when the user moves to another patch
-            raise
+            raise  # normal: user moved to another patch
         except Exception as exc:  # noqa: BLE001
             await ws.send_json(
                 ErrorMessage(request_id=msg.request_id, message=str(exc)).model_dump()

@@ -3,7 +3,7 @@
   --fg: #ffffff;
   --fg-muted: #c2c2c2;
   --fg-dim: #6e6e6e;
-  --accent: #171717;
+  --accent: #3b9eff;
   --warn: #ff4d4d;
   --tile-bg: #d4d4d4;
 
@@ -54,10 +54,23 @@ body {
 .canvas-section {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
   min-width: 0;
   min-height: 0;
+}
+
+/* horizontal row holding [arrow] [canvas] [arrow] */
+.canvas-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
 }
 
 .canvas-frame {
@@ -77,45 +90,79 @@ body {
   height: 100%;
 }
 
-.upload-button {
+/* arrow buttons flanking the canvas */
+
+.arrow-button {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 64px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.72);
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
   color: var(--fg-muted);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  font: inherit;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: lowercase;
-  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 1;
   cursor: pointer;
   user-select: none;
+  z-index: 10;
   transition:
     color 120ms ease,
     border-color 120ms ease,
     background 120ms ease;
   backdrop-filter: blur(6px);
-  z-index: 10;
 }
 
-.upload-button:hover {
+.arrow-button:hover {
   color: var(--fg);
   border-color: rgba(255, 255, 255, 0.4);
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.88);
 }
 
-.upload-button::before {
-  content: '↑';
-  font-size: 12px;
-  line-height: 1;
+.arrow-left {
+  left: 8px;
 }
 
-.upload-button input {
-  display: none;
+.arrow-right {
+  right: 8px;
+}
+
+/* thumbnail strip below the canvas */
+
+.thumbnails {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 64px;
+  height: 64px;
+  border: 2px solid transparent;
+  background-color: var(--tile-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.55;
+  transition:
+    opacity 140ms ease,
+    border-color 140ms ease;
+}
+
+.thumbnail:hover {
+  opacity: 0.85;
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border-color: var(--accent);
 }
 
 /* dwell progress bar — overlays the bottom edge of the canvas frame */
@@ -125,7 +172,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 2px;
   pointer-events: none;
   z-index: 5;
   opacity: 0;
@@ -194,10 +241,9 @@ body {
 }
 
 .header-thumb .thumb-caption {
-  color: var(--fg-dim);
+  color: var(--warn);
   font-size: 11px;
   line-height: 1.35;
-  text-align: center;
 }
 
 .header-text {

@@ -1,131 +1,85 @@
 """
-Disk storage for uploaded images and generated artifacts.
+Filesystem path helpers.
 
-Layout under `backend/tmp/`:
+Layout under `backend/`:
 
-    tmp/
-    └── <image_hash>/
-        ├── original.png
-        └── <row>_<col>/
-            ├── saliency.png
-            └── merged.png
-
-`image_hash` is a truncated SHA-256 of the cropped PNG bytes of the
-upload. Content-addressable: re-uploading the same image produces the
-same hash, so cached results are reused across sessions.
+    backend/
+    ├── data/                       # READ-ONLY at runtime, populated by precompute
+    │   ├── manifest.json
+    │   ├── images/
+    │   │   ├── dog.png
+    │   │   ├── hotdog.png
+    │   │   ├── cat.png
+    │   │   └── coffee.png
+    │   ├── channels/
+    │   │   ├── 0.png ... 191.png   # rep-max images for DeiT-Tiny block 11
+    │   └── precomputed/
+    │       ├── dog.json
+    │       ├── dog/
+    │       │   ├── original_saliency_display.png
+    │       │   ├── original_saliency_raw.png
+    │       │   ├── 0_0_saliency_display.png
+    │       │   ├── 0_0_saliency_raw.png
+    │       │   └── ...
+    │       └── ...
+    └── tmp/                        # RUNTIME-WRITTEN: merged images cached here
+        └── <image_id>/
+            └── <row>_<col>/
+                └── merged.png
 """
 
 from __future__ import annotations
 
-import hashlib
-from io import BytesIO
 from pathlib import Path
 
-from PIL import Image
+# repo_root/backend
+BACKEND_ROOT = Path(__file__).resolve().parent.parent
+DATA_ROOT = BACKEND_ROOT / "data"
+TMP_ROOT = BACKEND_ROOT / "tmp"
 
 
-# repo_root/backend/tmp
-TMP_ROOT = Path(__file__).resolve().parent.parent / "tmp"
+# ---------- read-only data paths ----------
 
+def manifest_path() -> Path:
+    return DATA_ROOT / "manifest.json"
+
+
+def precomputed_json_path(image_id: str) -> Path:
+    return DATA_ROOT / "precomputed" / f"{image_id}.json"
+
+
+def source_image_path(image_id: str) -> Path:
+    return DATA_ROOT / "images" / f"{image_id}.png"
+
+
+def saliency_raw_path(image_id: str, row: int, col: int) -> Path:
+    return DATA_ROOT / "precomputed" / image_id / f"{row}_{col}_saliency_raw.png"
+
+
+def channel_image_path(channel_id: int) -> Path:
+    return DATA_ROOT / "channels" / f"{channel_id}.png"
+
+
+# ---------- runtime tmp paths ----------
 
 def ensure_tmp_root() -> None:
     TMP_ROOT.mkdir(parents=True, exist_ok=True)
 
 
-def hash_bytes(data: bytes) -> str:
-    return hashlib.sha256(data).hexdigest()[:16]
-
-
-def image_dir(image_hash: str) -> Path:
-    return TMP_ROOT / image_hash
-
-
-def patch_dir(image_hash: str, row: int, col: int) -> Path:
-    return image_dir(image_hash) / f"{row}_{col}"
-
-
-def original_path(image_hash: str) -> Path:
-    return image_dir(image_hash) / "original.png"
-
-
-def saliency_path(image_hash: str, row: int, col: int) -> Path:
-    return patch_dir(image_hash, row, col) / "saliency.png"
-
-
-def merged_path(image_hash: str, row: int, col: int) -> Path:
-    return patch_dir(image_hash, row, col) / "merged.png"
+def merged_path(image_id: str, row: int, col: int) -> Path:
+    return TMP_ROOT / image_id / f"{row}_{col}" / "merged.png"
 
 
 # ---------- URL helpers ----------
 #
-# The frontend's vite proxy maps /api/* → backend /*. The backend
-# mounts static files at /tmp, and we hand out URLs prefixed with /api
-# so the browser hits the proxy correctly.
-
+# The frontend's vite proxy maps /api/* → backend /*.
 
 URL_PREFIX = "/api"
 
 
-def saliency_url(image_hash: str, row: int, col: int) -> str:
-    return f"{URL_PREFIX}/tmp/{image_hash}/{row}_{col}/saliency.png"
+def merged_url(image_id: str, row: int, col: int) -> str:
+    return f"{URL_PREFIX}/tmp/{image_id}/{row}_{col}/merged.png"
 
 
-def merged_url(image_hash: str, row: int, col: int) -> str:
-    return f"{URL_PREFIX}/tmp/{image_hash}/{row}_{col}/merged.png"
-
-
-# ---------- image upload helpers ----------
-
-
-def center_crop_to_square(img: Image.Image) -> Image.Image:
-    side = min(img.size)
-    left = (img.width - side) // 2
-    top = (img.height - side) // 2
-    return img.crop((left, top, left + side, top + side))
-
-
-def save_uploaded_image(raw_bytes: bytes) -> tuple[str, int]:
-    """
-    Center-crop the uploaded image, save as PNG, return (hash, size).
-
-    Hash is computed from the cropped PNG bytes so the same logical
-    image always hits the same cache entry.
-    """
-    ensure_tmp_root()
-    img = Image.open(BytesIO(raw_bytes)).convert("RGB")
-    cropped = center_crop_to_square(img)
-
-    buf = BytesIO()
-    cropped.save(buf, format="PNG")
-    png_bytes = buf.getvalue()
-
-    image_hash = hash_bytes(png_bytes)
-    image_dir(image_hash).mkdir(parents=True, exist_ok=True)
-    out = original_path(image_hash)
-    if not out.exists():
-        out.write_bytes(png_bytes)
-
-    return image_hash, cropped.width
-
-
-def load_original(image_hash: str) -> Image.Image:
-    return Image.open(original_path(image_hash)).convert("RGB")
-
-
-def wipe_others(active_hash: str) -> int:
-    """
-    Delete every directory under TMP_ROOT whose name is not active_hash.
-    Returns the count removed. Caller is responsible for first cancelling
-    any in-flight precompute that might be writing into one of these
-    directories.
-    """
-    import shutil
-
-    if not TMP_ROOT.exists():
-        return 0
-    removed = 0
-    for entry in TMP_ROOT.iterdir():
-        if entry.is_dir() and entry.name != active_hash:
-            shutil.rmtree(entry, ignore_errors=True)
-            removed += 1
-    return removed
+def source_image_url(image_id: str) -> str:
+    return f"{URL_PREFIX}/images/{image_id}.png"

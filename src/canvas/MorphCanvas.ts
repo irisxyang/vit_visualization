@@ -1,5 +1,3 @@
-import type { UploadedImage } from '../upload/ImageUploader'
-
 /**
  * MorphCanvas
  * -----------
@@ -27,7 +25,7 @@ import type { UploadedImage } from '../upload/ImageUploader'
 const TEX_SIZE = 512
 
 /** Time constant for exponential approach. ~3τ = visually settled. */
-const TIME_CONSTANT_S = 0.6
+const TIME_CONSTANT_S = 0.35
 
 const VERT_SRC = `#version 300 es
 in vec2 a_position;
@@ -187,21 +185,21 @@ export class MorphCanvas {
    * Snap to a new image. Both ping-pong slots and the target are
    * overwritten — no morph. Use this on upload / fresh image load.
    */
-  setImage(img: UploadedImage): void {
-    this.currentBitmap = img.bitmap
-    this.uploadStandardized(this.targetTex, img.bitmap)
-    this.uploadStandardized(this.texA, img.bitmap)
-    this.uploadStandardized(this.texB, img.bitmap)
+  setImage(bitmap: ImageBitmap): void {
+    this.currentBitmap = bitmap
+    this.uploadStandardized(this.targetTex, bitmap)
+    this.uploadStandardized(this.texA, bitmap)
+    this.uploadStandardized(this.texB, bitmap)
   }
 
   /**
    * Set the target the morph is chasing. The current displayed state
    * keeps moving toward it smoothly. Calling this mid-morph redirects.
    */
-  setTarget(source: UploadedImage | ImageBitmap): void {
-    const bitmap = source instanceof ImageBitmap ? source : source.bitmap
+  setTarget(bitmap: ImageBitmap): void {
     this.uploadStandardized(this.targetTex, bitmap)
   }
+
   /** Most recent source bitmap (i.e. last `setImage` arg). */
   getCurrentBitmap(): ImageBitmap | null {
     return this.currentBitmap

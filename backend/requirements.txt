@@ -9,3 +9,4 @@ uvicorn[standard]>=0.32
 pillow>=10.4
 python-multipart>=0.0.12
 pydantic>=2.9
+scipy

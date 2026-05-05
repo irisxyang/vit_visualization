@@ -25,13 +25,23 @@ class Patch(BaseModel):
 
 
 # =====================================================================
-# HTTP /upload
+# HTTP /manifest
 # =====================================================================
 
 
-class UploadResponse(BaseModel):
-    image_hash: str
-    size: int  # side length in pixels of the (cropped, square) image
+class ManifestImageView(BaseModel):
+    """One entry per default image, returned in display order."""
+
+    image_id: str
+    image_url: str
+    original_class_id: int
+    original_class_name: str
+    original_top_3_channel_ids: list[int]
+    original_saliency_display_url: str
+
+
+class ManifestResponse(BaseModel):
+    images: list[ManifestImageView]
 
 
 # =====================================================================
@@ -42,7 +52,7 @@ class UploadResponse(BaseModel):
 class RequestMessage(BaseModel):
     type: Literal["request"] = "request"
     request_id: str
-    image_hash: str
+    image_id: str
     patch: Patch
 
 
@@ -65,13 +75,13 @@ ClientMessage = Annotated[
 class ResultMessage(BaseModel):
     type: Literal["result"] = "result"
     request_id: str
-    image_hash: str
+    image_id: str
     patch: Patch
     new_class_id: int
     new_class_name: str
     top_3_channel_ids: list[int]  # length 3
-    saliency_url: str  # served via /api/tmp/...
-    merged_image_url: str
+    saliency_url: str  # served via /api/precomputed/...
+    merged_image_url: str  # served via /api/tmp/...
 
 
 class ErrorMessage(BaseModel):
@@ -80,14 +90,7 @@ class ErrorMessage(BaseModel):
     message: str
 
 
-class PrecomputeProgressMessage(BaseModel):
-    type: Literal["precompute_progress"] = "precompute_progress"
-    image_hash: str
-    done: int
-    total: int
-
-
 ServerMessage = Annotated[
-    Union[ResultMessage, ErrorMessage, PrecomputeProgressMessage],
+    Union[ResultMessage, ErrorMessage],
     Field(discriminator="type"),
 ]

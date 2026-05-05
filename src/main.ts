@@ -1,5 +1,4 @@
 import './style.css'
-import { ImageUploader } from './upload/ImageUploader'
 import { MorphCanvas } from './canvas/MorphCanvas'
 import { RightPanel } from './panel/RightPanel'
 import { MouseToPatch } from './input/MouseToPatch'
@@ -7,17 +6,24 @@ import { DwellDetector } from './input/DwellDetector'
 import { DwellProgressBar } from './canvas/DwellProgressBar'
 import { BackendClient } from './api/BackendClient'
 import { AppState } from './state/AppState'
+import { ImagePicker } from './picker/ImagePicker'
+import type { ManifestImageView } from './api/types'
 
 const app = document.getElementById('app')
 if (!app) throw new Error('main: #app root element missing')
 
-// --- left side: canvas + upload + dwell bar ---
+// --- left side: canvas section (canvas-row + thumbnails below) ---
 
 const canvasSection = document.createElement('section')
 canvasSection.className = 'canvas-section'
 
+const canvasRow = document.createElement('div')
+canvasRow.className = 'canvas-row'
+canvasSection.appendChild(canvasRow)
+
 const canvasFrame = document.createElement('div')
 canvasFrame.className = 'canvas-frame'
+canvasRow.appendChild(canvasFrame)
 
 const morphCanvas = new MorphCanvas()
 canvasFrame.appendChild(morphCanvas.element)
@@ -28,19 +34,14 @@ const DWELL_MS = 3000
 const dwellBar = new DwellProgressBar(DWELL_MS)
 canvasFrame.appendChild(dwellBar.element)
 
-// --- backend + state ---
+// --- backend ---
 
 const backend = new BackendClient({
   onResult: (msg) => state.onResult(msg),
-  onProgress: (done, total, hash) => {
-    console.log(`[precompute] ${done}/${total} for ${hash}`)
-  },
   onConnectionChange: (connected) => {
     console.log('[ws]', connected ? 'connected' : 'disconnected')
   },
 })
-
-const state = new AppState(morphCanvas, panel, backend)
 
 // --- input pipeline ---
 
@@ -53,28 +54,49 @@ const dwellDetector = new DwellDetector({
   },
 })
 
+const state = new AppState(morphCanvas, panel, backend, dwellDetector)
+
 new MouseToPatch({
   hitTarget: canvasFrame,
   canvas: morphCanvas.element,
   onChange: (event) => dwellDetector.handle(event),
 })
 
-// --- uploader ---
+// --- image picker ---
 
-const uploader = new ImageUploader({
-  onUpload: (img) => {
-    state.loadImage(img)
+// quick lookup: image_id -> manifest entry
+let manifestById: Map<string, ManifestImageView> = new Map()
+
+const picker = new ImagePicker({
+  onSelect: (imageId) => {
+    const entry = manifestById.get(imageId)
+    if (!entry) {
+      console.error('[main] selected image not in manifest:', imageId)
+      return
+    }
+    state.selectImage(entry)
   },
 })
-canvasFrame.appendChild(uploader.element)
 
-canvasSection.appendChild(canvasFrame)
+// arrows go inside canvas-row (absolutely positioned, flanking canvas)
+canvasRow.appendChild(picker.leftButton)
+canvasRow.appendChild(picker.rightButton)
+// thumbnails go below canvas-row, inside canvas-section
+canvasSection.appendChild(picker.thumbnails)
 
 // --- assemble ---
 
 app.appendChild(canvasSection)
 app.appendChild(panel.element)
 
-// --- boot ---
+// --- boot: fetch manifest, hand to picker ---
 
-uploader.loadFromUrl('/default.png')
+;(async () => {
+  try {
+    const manifest = await backend.fetchManifest()
+    manifestById = new Map(manifest.images.map((img) => [img.image_id, img]))
+    picker.setImages(manifest.images)
+  } catch (err) {
+    console.error('[main] manifest fetch failed:', err)
+  }
+})()

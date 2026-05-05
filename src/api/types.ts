@@ -1,18 +1,25 @@
 /**
  * Wire types mirroring backend/app/schemas.py.
  *
- * Keep these in sync manually. If the schemas grow, consider
- * generating from openapi.json instead.
+ * Keep these in sync manually.
  */
 
 import type { Patch } from '../input/types'
 export type { Patch }
 
-// ---------- HTTP /upload ----------
+// ---------- HTTP /manifest ----------
 
-export interface UploadResponse {
-  image_hash: string
-  size: number
+export interface ManifestImageView {
+  image_id: string
+  image_url: string
+  original_class_id: number
+  original_class_name: string
+  original_top_3_channel_ids: number[]
+  original_saliency_display_url: string
+}
+
+export interface ManifestResponse {
+  images: ManifestImageView[]
 }
 
 // ---------- WS /morph: client → server ----------
@@ -20,7 +27,7 @@ export interface UploadResponse {
 export interface RequestMessage {
   type: 'request'
   request_id: string
-  image_hash: string
+  image_id: string
   patch: Patch
 }
 
@@ -36,7 +43,7 @@ export type ClientMessage = RequestMessage | CancelMessage
 export interface ResultMessage {
   type: 'result'
   request_id: string
-  image_hash: string
+  image_id: string
   patch: Patch
   new_class_id: number
   new_class_name: string
@@ -51,14 +58,4 @@ export interface ErrorMessage {
   message: string
 }
 
-export interface PrecomputeProgressMessage {
-  type: 'precompute_progress'
-  image_hash: string
-  done: number
-  total: number
-}
-
-export type ServerMessage =
-  | ResultMessage
-  | ErrorMessage
-  | PrecomputeProgressMessage
+export type ServerMessage = ResultMessage | ErrorMessage

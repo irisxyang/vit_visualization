@@ -1,33 +1,35 @@
 import type { MorphCanvas } from '../canvas/MorphCanvas'
 import type { RightPanel, ClassificationView } from '../panel/RightPanel'
 import type { BackendClient } from '../api/BackendClient'
-import type { ResultMessage } from '../api/types'
+import type { ManifestImageView, ResultMessage } from '../api/types'
 import type { GazeStatus, Patch } from '../input/types'
-import type { UploadedImage } from '../upload/ImageUploader'
+import type { DwellDetector } from '../input/DwellDetector'
 
 /**
  * AppState
  * --------
  * Single source of truth orchestrating the dwell→request→morph loop.
  *
+ *   image selected
+ *     → fetch source bitmap, snap canvas (no morph)
+ *     → reset panel; populate "original" classification + saliency
+ *       from the manifest entry
+ *     → record imageId; future requests reference it
+ *
  *   dwell fires
  *     → mint requestId, send to backend, store as pendingRequestId
- *     → other in-flight requests are cancelled (for cleanliness; we'd
- *       drop their results anyway via the ID check)
+ *     → cancel any in-flight requests (cleanliness; we'd drop their
+ *       results anyway via the ID check)
+ *
  *   result arrives
- *     → ignore unless requestId === pendingRequestId
+ *     → ignore unless requestId === pendingRequestId AND image_id matches
  *     → fetch+decode merged image
- *     → call setTarget on canvas, update panel
+ *     → call setTarget on canvas, update "new" panel slots
  *
- * Off-canvas revert:
- *   when gazeStatus becomes off_canvas, start a 500ms timer. if the
- *   cursor returns before it fires, cancel. if it fires, swap the
- *   morph target back to the original bitmap.
- *
- * Image switch:
- *   on new upload, clear current state, reset panel, snap canvas to
- *   the new image (no morph), update imageHash so subsequent dwells
- *   reference the new image.
+ *   off-canvas revert:
+ *     when gazeStatus becomes off_canvas, start a 500ms timer. if the
+ *     cursor returns before it fires, cancel. if it fires, swap the
+ *     morph target back to the original bitmap.
  */
 
 const REVERT_DELAY_MS = 500
@@ -36,9 +38,11 @@ export class AppState {
   private canvas: MorphCanvas
   private panel: RightPanel
   private backend: BackendClient
+  private dwellDetector: DwellDetector
 
-  private originalImage: UploadedImage | null = null
-  private imageHash: string | null = null
+  /** Source bitmap of the currently selected image, used for revert. */
+  private originalBitmap: ImageBitmap | null = null
+  private imageId: string | null = null
 
   /** Last successful result we've actually applied (or are applying). */
   private currentResult: ResultMessage | null = null
@@ -52,45 +56,67 @@ export class AppState {
   private revertTimer: number | null = null
   private gazeStatus: GazeStatus = { kind: 'off_canvas' }
 
-  constructor(canvas: MorphCanvas, panel: RightPanel, backend: BackendClient) {
+  constructor(
+    canvas: MorphCanvas,
+    panel: RightPanel,
+    backend: BackendClient,
+    dwellDetector: DwellDetector,
+  ) {
     this.canvas = canvas
     this.panel = panel
     this.backend = backend
+    this.dwellDetector = dwellDetector
   }
 
-  // =========== uploads ===========
+  // =========== image selection ===========
 
   /**
-   * Apply a freshly-uploaded image. Snaps the canvas (no morph), resets
-   * panel state, uploads to backend, records the new hash.
+   * Switch to a default image. Snaps the canvas (no morph), resets
+   * panel, populates the "original" panel section from the manifest.
    */
-  async loadImage(img: UploadedImage): Promise<void> {
-    this.originalImage = img
-    this.canvas.setImage(img)
-    this.panel.setHeaderThumb(img)
+  async selectImage(entry: ManifestImageView): Promise<void> {
+    if (this.imageId === entry.image_id) return  // no-op
 
-    // reset all derived state — no carryover from previous image
+    // ---- tear down state from previous image ----
     this.cancelAllInFlight()
     this.currentResult = null
     this.pendingRequestId = null
     this.clearRevertTimer()
-    this.panel.setOriginalClassification(null)
-    this.panel.setNewClassification(null)
-    this.panel.setOriginalSaliencyUrl(null)
-    this.panel.setModifiedSaliencyUrl(null)
-    this.panel.setAttendingPatch(null, false)
+    // also reset any in-progress dwell timer on the old image
+    this.dwellDetector.handle({ kind: 'leave' })
     this.backend.clearBitmapCache()
 
-    // upload to backend; if it fails we keep displaying the image but
-    // dwell-fires won't do anything useful until the user retries
+    // ---- fetch new image bitmap ----
+    let bitmap: ImageBitmap
     try {
-      const resp = await this.backend.upload(img.blob, img.name)
-      this.imageHash = resp.image_hash
-      console.log('[AppState] image hash:', resp.image_hash)
+      bitmap = await this.backend.fetchBitmap(entry.image_url)
     } catch (err) {
-      console.error('[AppState] upload failed:', err)
-      this.imageHash = null
+      console.error('[AppState] failed to fetch source image:', err)
+      return
     }
+
+    this.imageId = entry.image_id
+    this.originalBitmap = bitmap
+    // setImage takes our local UploadedImage-like shape; canvas
+    // accepts a bare ImageBitmap as well (see MorphCanvas.setImage).
+    this.canvas.setImage(bitmap)
+    this.panel.setHeaderThumb(bitmap)
+
+    // ---- populate panel: original section from manifest ----
+    const original: ClassificationView = {
+      classId: entry.original_class_id,
+      className: entry.original_class_name,
+      channelIds: entry.original_top_3_channel_ids as [number, number, number],
+    }
+    this.panel.setOriginalClassification(original)
+    this.panel.setOriginalSaliencyUrl(entry.original_saliency_display_url)
+
+    // ---- clear "new" section; will fill in once user dwells ----
+    this.panel.setNewClassification(null)
+    this.panel.setModifiedSaliencyUrl(null)
+    this.panel.setAttendingPatch(null, false)
+
+    console.log('[AppState] selected', entry.image_id)
   }
 
   // =========== gaze pipeline ===========
@@ -98,32 +124,26 @@ export class AppState {
   setGazeStatus(status: GazeStatus): void {
     this.gazeStatus = status
 
-    // panel patch indicator
     if (status.kind === 'off_canvas') {
       this.panel.setAttendingPatch(null, false)
-    } else {
-      this.panel.setAttendingPatch(status.patch, status.kind === 'dwelling')
-    }
-
-    // off-canvas revert timer management
-    if (status.kind === 'off_canvas') {
       this.scheduleRevert()
     } else {
+      this.panel.setAttendingPatch(status.patch, status.kind === 'dwelling')
       this.clearRevertTimer()
     }
   }
 
   /** Called by DwellDetector when a patch crosses the threshold. */
   onDwellFired(patch: Patch): void {
-    if (!this.imageHash) {
-      console.warn('[AppState] dwell fired with no image_hash; ignoring')
+    if (!this.imageId) {
+      console.warn('[AppState] dwell fired with no image_id; ignoring')
       return
     }
     this.cancelAllInFlight()
     const requestId = `req-${performance.now().toFixed(0)}-${Math.random().toString(36).slice(2, 8)}`
     this.pendingRequestId = requestId
     this.inFlightRequestIds.add(requestId)
-    this.backend.request(requestId, this.imageHash, patch)
+    this.backend.request(requestId, this.imageId, patch)
     console.log('[AppState] sent request', requestId, 'patch', patch)
   }
 
@@ -131,25 +151,22 @@ export class AppState {
   async onResult(msg: ResultMessage): Promise<void> {
     this.inFlightRequestIds.delete(msg.request_id)
 
-    // stale? drop.
     if (msg.request_id !== this.pendingRequestId) {
       console.log('[AppState] dropping stale result', msg.request_id)
       return
     }
-    // image switched between request and result?
-    if (msg.image_hash !== this.imageHash) {
-      console.log('[AppState] dropping result for old image', msg.image_hash)
+    if (msg.image_id !== this.imageId) {
+      console.log('[AppState] dropping result for old image', msg.image_id)
       return
     }
 
     this.currentResult = msg
-    this.applyResult(msg)
+    await this.applyResult(msg)
   }
 
   // =========== internals ===========
 
   private async applyResult(msg: ResultMessage): Promise<void> {
-    // panel updates first — they're cheap and look responsive
     const newView: ClassificationView = {
       classId: msg.new_class_id,
       className: msg.new_class_name,
@@ -158,7 +175,6 @@ export class AppState {
     this.panel.setNewClassification(newView)
     this.panel.setModifiedSaliencyUrl(msg.saliency_url)
 
-    // fetch the merged image and morph to it
     try {
       const bitmap = await this.backend.fetchBitmap(msg.merged_image_url)
       // double-check we still want this — image might have switched mid-fetch
@@ -173,10 +189,8 @@ export class AppState {
     this.clearRevertTimer()
     this.revertTimer = window.setTimeout(() => {
       this.revertTimer = null
-      if (this.originalImage && this.gazeStatus.kind === 'off_canvas') {
-        this.canvas.setTarget(this.originalImage)
-        // keep panel state — user might still be reading it. it'll be
-        // overwritten on the next dwell.
+      if (this.originalBitmap && this.gazeStatus.kind === 'off_canvas') {
+        this.canvas.setTarget(this.originalBitmap)
       }
     }, REVERT_DELAY_MS)
   }

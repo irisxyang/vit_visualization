@@ -1,22 +1,22 @@
 import type {
   ClientMessage,
+  ManifestResponse,
   RequestMessage,
   ResultMessage,
   ServerMessage,
-  UploadResponse,
   Patch,
 } from './types'
 
 /**
  * BackendClient
  * -------------
- * Wraps the backend's HTTP /upload, WS /morph, and image URL fetches
+ * Wraps the backend's HTTP /manifest, WS /morph, and image URL fetches
  * behind a single object the rest of the app can drive without
  * caring about the network layer.
  *
  * Responsibilities:
  *   - lifecycle: connect WS lazily, reconnect on drops with backoff
- *   - upload: POST file, return UploadResponse
+ *   - manifest: fetch the list of available default images
  *   - request: send a RequestMessage; receive results via callback
  *   - cancel: send a CancelMessage (best-effort, fire-and-forget)
  *   - image cache: fetch+decode merged_image_url -> ImageBitmap, memoized
@@ -28,7 +28,6 @@ import type {
 
 export interface BackendClientOptions {
   onResult: (msg: ResultMessage) => void
-  onProgress: (done: number, total: number, imageHash: string) => void
   onConnectionChange?: (connected: boolean) => void
 }
 
@@ -46,15 +45,12 @@ export class BackendClient {
 
   // ===== HTTP =====
 
-  async upload(blob: Blob, filename: string): Promise<UploadResponse> {
-    const fd = new FormData()
-    fd.append('file', blob, filename)
-    const resp = await fetch('/api/upload', { method: 'POST', body: fd })
+  async fetchManifest(): Promise<ManifestResponse> {
+    const resp = await fetch('/api/manifest')
     if (!resp.ok) {
-      const text = await resp.text().catch(() => '')
-      throw new Error(`upload failed: ${resp.status} ${text}`)
+      throw new Error(`manifest fetch failed: ${resp.status}`)
     }
-    return (await resp.json()) as UploadResponse
+    return (await resp.json()) as ManifestResponse
   }
 
   /**
@@ -71,7 +67,6 @@ export class BackendClient {
       return await createImageBitmap(blob)
     })()
     this.bitmapCache.set(url, p)
-    // if it fails, drop from cache so a retry can re-fetch
     p.catch(() => this.bitmapCache.delete(url))
     return p
   }
@@ -83,11 +78,11 @@ export class BackendClient {
 
   // ===== WebSocket =====
 
-  request(requestId: string, imageHash: string, patch: Patch): void {
+  request(requestId: string, imageId: string, patch: Patch): void {
     const msg: RequestMessage = {
       type: 'request',
       request_id: requestId,
-      image_hash: imageHash,
+      image_id: imageId,
       patch,
     }
     this.send(msg)
@@ -111,8 +106,6 @@ export class BackendClient {
     if (this.ws && this.ws.readyState === WebSocket.OPEN) {
       this.ws.send(JSON.stringify(msg))
     } else {
-      // dropped on the floor — caller is responsible for noticing if
-      // they care. results loop will re-fire on reconnect via app state.
       console.warn('[BackendClient] dropping message (ws not open):', msg.type)
     }
   }
@@ -157,9 +150,6 @@ export class BackendClient {
     switch (msg.type) {
       case 'result':
         this.opts.onResult(msg)
-        break
-      case 'precompute_progress':
-        this.opts.onProgress(msg.done, msg.total, msg.image_hash)
         break
       case 'error':
         console.error('[BackendClient] server error:', msg.message, 'req=', msg.request_id)
