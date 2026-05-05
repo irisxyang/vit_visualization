@@ -1,0 +1,1977 @@
+{
+  "image_id": "hotdog",
+  "image_url": "/api/images/hotdog.png",
+  "image_hash": "51ad733114d7b688",
+  "original": {
+    "class_id": 934,
+    "prob": 83.23064422607422,
+    "top_3_channel_ids": [
+      21,
+      135,
+      88
+    ],
+    "saliency_url": "/api/precomputed/hotdog/original_saliency.png"
+  },
+  "patches": {
+    "0_0": {
+      "class_id": 788,
+      "prob": 0.13237681984901428,
+      "top_3_channel_ids": [
+        21,
+        88,
+        22
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_0_saliency.png"
+    },
+    "0_1": {
+      "class_id": 643,
+      "prob": 0.2662082016468048,
+      "top_3_channel_ids": [
+        21,
+        65,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_1_saliency.png"
+    },
+    "0_2": {
+      "class_id": 788,
+      "prob": 0.101555734872818,
+      "top_3_channel_ids": [
+        21,
+        88,
+        156
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_2_saliency.png"
+    },
+    "0_3": {
+      "class_id": 934,
+      "prob": 0.564414381980896,
+      "top_3_channel_ids": [
+        21,
+        88,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_3_saliency.png"
+    },
+    "0_4": {
+      "class_id": 797,
+      "prob": 0.18602131307125092,
+      "top_3_channel_ids": [
+        21,
+        133,
+        45
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_4_saliency.png"
+    },
+    "0_5": {
+      "class_id": 728,
+      "prob": 0.37543967366218567,
+      "top_3_channel_ids": [
+        21,
+        45,
+        112
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_5_saliency.png"
+    },
+    "0_6": {
+      "class_id": 788,
+      "prob": 0.301209032535553,
+      "top_3_channel_ids": [
+        21,
+        88,
+        55
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_6_saliency.png"
+    },
+    "0_7": {
+      "class_id": 614,
+      "prob": 0.08519832044839859,
+      "top_3_channel_ids": [
+        21,
+        46,
+        160
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_7_saliency.png"
+    },
+    "0_8": {
+      "class_id": 728,
+      "prob": 0.1410416215658188,
+      "top_3_channel_ids": [
+        21,
+        158,
+        23
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_8_saliency.png"
+    },
+    "0_9": {
+      "class_id": 934,
+      "prob": 0.2544834613800049,
+      "top_3_channel_ids": [
+        21,
+        88,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_9_saliency.png"
+    },
+    "0_10": {
+      "class_id": 797,
+      "prob": 0.12143087387084961,
+      "top_3_channel_ids": [
+        21,
+        5,
+        133
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_10_saliency.png"
+    },
+    "0_11": {
+      "class_id": 863,
+      "prob": 0.5305336117744446,
+      "top_3_channel_ids": [
+        166,
+        139,
+        170
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_11_saliency.png"
+    },
+    "0_12": {
+      "class_id": 934,
+      "prob": 0.044395674020051956,
+      "top_3_channel_ids": [
+        21,
+        78,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_12_saliency.png"
+    },
+    "0_13": {
+      "class_id": 591,
+      "prob": 0.1932842880487442,
+      "top_3_channel_ids": [
+        21,
+        135,
+        22
+      ],
+      "saliency_url": "/api/precomputed/hotdog/0_13_saliency.png"
+    },
+    "1_0": {
+      "class_id": 750,
+      "prob": 0.04986320808529854,
+      "top_3_channel_ids": [
+        21,
+        5,
+        69
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_0_saliency.png"
+    },
+    "1_1": {
+      "class_id": 917,
+      "prob": 0.07419539242982864,
+      "top_3_channel_ids": [
+        21,
+        84,
+        115
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_1_saliency.png"
+    },
+    "1_2": {
+      "class_id": 934,
+      "prob": 0.577744722366333,
+      "top_3_channel_ids": [
+        21,
+        88,
+        75
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_2_saliency.png"
+    },
+    "1_3": {
+      "class_id": 934,
+      "prob": 0.20609627664089203,
+      "top_3_channel_ids": [
+        21,
+        29,
+        97
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_3_saliency.png"
+    },
+    "1_4": {
+      "class_id": 728,
+      "prob": 0.12501245737075806,
+      "top_3_channel_ids": [
+        21,
+        76,
+        181
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_4_saliency.png"
+    },
+    "1_5": {
+      "class_id": 797,
+      "prob": 0.3461324870586395,
+      "top_3_channel_ids": [
+        21,
+        45,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_5_saliency.png"
+    },
+    "1_6": {
+      "class_id": 934,
+      "prob": 0.1858283430337906,
+      "top_3_channel_ids": [
+        21,
+        135,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_6_saliency.png"
+    },
+    "1_7": {
+      "class_id": 696,
+      "prob": 0.3198876976966858,
+      "top_3_channel_ids": [
+        21,
+        182,
+        26
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_7_saliency.png"
+    },
+    "1_8": {
+      "class_id": 934,
+      "prob": 0.37447357177734375,
+      "top_3_channel_ids": [
+        21,
+        135,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_8_saliency.png"
+    },
+    "1_9": {
+      "class_id": 934,
+      "prob": 0.49515241384506226,
+      "top_3_channel_ids": [
+        21,
+        78,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_9_saliency.png"
+    },
+    "1_10": {
+      "class_id": 696,
+      "prob": 0.10021284222602844,
+      "top_3_channel_ids": [
+        21,
+        71,
+        126
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_10_saliency.png"
+    },
+    "1_11": {
+      "class_id": 549,
+      "prob": 0.07550680637359619,
+      "top_3_channel_ids": [
+        21,
+        84,
+        47
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_11_saliency.png"
+    },
+    "1_12": {
+      "class_id": 934,
+      "prob": 0.24805764853954315,
+      "top_3_channel_ids": [
+        21,
+        45,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_12_saliency.png"
+    },
+    "1_13": {
+      "class_id": 917,
+      "prob": 0.7134290933609009,
+      "top_3_channel_ids": [
+        21,
+        87,
+        103
+      ],
+      "saliency_url": "/api/precomputed/hotdog/1_13_saliency.png"
+    },
+    "2_0": {
+      "class_id": 788,
+      "prob": 0.14692798256874084,
+      "top_3_channel_ids": [
+        21,
+        88,
+        57
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_0_saliency.png"
+    },
+    "2_1": {
+      "class_id": 549,
+      "prob": 0.11487284302711487,
+      "top_3_channel_ids": [
+        21,
+        188,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_1_saliency.png"
+    },
+    "2_2": {
+      "class_id": 934,
+      "prob": 0.2470298558473587,
+      "top_3_channel_ids": [
+        65,
+        97,
+        8
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_2_saliency.png"
+    },
+    "2_3": {
+      "class_id": 934,
+      "prob": 0.3751370906829834,
+      "top_3_channel_ids": [
+        21,
+        29,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_3_saliency.png"
+    },
+    "2_4": {
+      "class_id": 934,
+      "prob": 0.4395432770252228,
+      "top_3_channel_ids": [
+        21,
+        135,
+        141
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_4_saliency.png"
+    },
+    "2_5": {
+      "class_id": 934,
+      "prob": 0.30076250433921814,
+      "top_3_channel_ids": [
+        21,
+        135,
+        137
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_5_saliency.png"
+    },
+    "2_6": {
+      "class_id": 934,
+      "prob": 0.5236340761184692,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_6_saliency.png"
+    },
+    "2_7": {
+      "class_id": 934,
+      "prob": 0.05126521363854408,
+      "top_3_channel_ids": [
+        21,
+        65,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_7_saliency.png"
+    },
+    "2_8": {
+      "class_id": 879,
+      "prob": 0.1624595820903778,
+      "top_3_channel_ids": [
+        21,
+        84,
+        4
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_8_saliency.png"
+    },
+    "2_9": {
+      "class_id": 917,
+      "prob": 0.1753486841917038,
+      "top_3_channel_ids": [
+        21,
+        87,
+        84
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_9_saliency.png"
+    },
+    "2_10": {
+      "class_id": 917,
+      "prob": 0.31307634711265564,
+      "top_3_channel_ids": [
+        21,
+        156,
+        171
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_10_saliency.png"
+    },
+    "2_11": {
+      "class_id": 934,
+      "prob": 0.787322461605072,
+      "top_3_channel_ids": [
+        97,
+        65,
+        89
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_11_saliency.png"
+    },
+    "2_12": {
+      "class_id": 830,
+      "prob": 0.11288785189390182,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_12_saliency.png"
+    },
+    "2_13": {
+      "class_id": 750,
+      "prob": 0.16862016916275024,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/2_13_saliency.png"
+    },
+    "3_0": {
+      "class_id": 934,
+      "prob": 0.10082971304655075,
+      "top_3_channel_ids": [
+        21,
+        88,
+        8
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_0_saliency.png"
+    },
+    "3_1": {
+      "class_id": 692,
+      "prob": 0.13173286616802216,
+      "top_3_channel_ids": [
+        60,
+        160,
+        47
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_1_saliency.png"
+    },
+    "3_2": {
+      "class_id": 934,
+      "prob": 0.5079141855239868,
+      "top_3_channel_ids": [
+        21,
+        65,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_2_saliency.png"
+    },
+    "3_3": {
+      "class_id": 934,
+      "prob": 0.2879377007484436,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_3_saliency.png"
+    },
+    "3_4": {
+      "class_id": 934,
+      "prob": 0.49961698055267334,
+      "top_3_channel_ids": [
+        21,
+        135,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_4_saliency.png"
+    },
+    "3_5": {
+      "class_id": 917,
+      "prob": 0.0867641344666481,
+      "top_3_channel_ids": [
+        21,
+        53,
+        87
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_5_saliency.png"
+    },
+    "3_6": {
+      "class_id": 934,
+      "prob": 0.1986110508441925,
+      "top_3_channel_ids": [
+        21,
+        152,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_6_saliency.png"
+    },
+    "3_7": {
+      "class_id": 749,
+      "prob": 0.17294251918792725,
+      "top_3_channel_ids": [
+        21,
+        148,
+        162
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_7_saliency.png"
+    },
+    "3_8": {
+      "class_id": 549,
+      "prob": 0.11579781770706177,
+      "top_3_channel_ids": [
+        21,
+        5,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_8_saliency.png"
+    },
+    "3_9": {
+      "class_id": 934,
+      "prob": 0.16814850270748138,
+      "top_3_channel_ids": [
+        88,
+        65,
+        21
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_9_saliency.png"
+    },
+    "3_10": {
+      "class_id": 917,
+      "prob": 0.6928994655609131,
+      "top_3_channel_ids": [
+        21,
+        23,
+        19
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_10_saliency.png"
+    },
+    "3_11": {
+      "class_id": 934,
+      "prob": 0.4362339973449707,
+      "top_3_channel_ids": [
+        21,
+        135,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_11_saliency.png"
+    },
+    "3_12": {
+      "class_id": 723,
+      "prob": 0.1624750792980194,
+      "top_3_channel_ids": [
+        21,
+        162,
+        59
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_12_saliency.png"
+    },
+    "3_13": {
+      "class_id": 917,
+      "prob": 0.1853698045015335,
+      "top_3_channel_ids": [
+        21,
+        63,
+        56
+      ],
+      "saliency_url": "/api/precomputed/hotdog/3_13_saliency.png"
+    },
+    "4_0": {
+      "class_id": 934,
+      "prob": 0.4038377106189728,
+      "top_3_channel_ids": [
+        21,
+        88,
+        141
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_0_saliency.png"
+    },
+    "4_1": {
+      "class_id": 767,
+      "prob": 0.15126213431358337,
+      "top_3_channel_ids": [
+        21,
+        24,
+        125
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_1_saliency.png"
+    },
+    "4_2": {
+      "class_id": 641,
+      "prob": 0.1709969937801361,
+      "top_3_channel_ids": [
+        21,
+        65,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_2_saliency.png"
+    },
+    "4_3": {
+      "class_id": 509,
+      "prob": 0.09645473212003708,
+      "top_3_channel_ids": [
+        60,
+        121,
+        28
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_3_saliency.png"
+    },
+    "4_4": {
+      "class_id": 696,
+      "prob": 0.15861733257770538,
+      "top_3_channel_ids": [
+        21,
+        26,
+        126
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_4_saliency.png"
+    },
+    "4_5": {
+      "class_id": 457,
+      "prob": 0.06598413735628128,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_5_saliency.png"
+    },
+    "4_6": {
+      "class_id": 894,
+      "prob": 0.12486912310123444,
+      "top_3_channel_ids": [
+        88,
+        24,
+        22
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_6_saliency.png"
+    },
+    "4_7": {
+      "class_id": 917,
+      "prob": 0.129139244556427,
+      "top_3_channel_ids": [
+        21,
+        84,
+        18
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_7_saliency.png"
+    },
+    "4_8": {
+      "class_id": 953,
+      "prob": 0.08442969620227814,
+      "top_3_channel_ids": [
+        21,
+        71,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_8_saliency.png"
+    },
+    "4_9": {
+      "class_id": 917,
+      "prob": 0.1107388511300087,
+      "top_3_channel_ids": [
+        84,
+        53,
+        23
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_9_saliency.png"
+    },
+    "4_10": {
+      "class_id": 728,
+      "prob": 0.0672333762049675,
+      "top_3_channel_ids": [
+        21,
+        114,
+        97
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_10_saliency.png"
+    },
+    "4_11": {
+      "class_id": 934,
+      "prob": 0.09056080132722855,
+      "top_3_channel_ids": [
+        21,
+        88,
+        8
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_11_saliency.png"
+    },
+    "4_12": {
+      "class_id": 587,
+      "prob": 0.07996851950883865,
+      "top_3_channel_ids": [
+        21,
+        181,
+        20
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_12_saliency.png"
+    },
+    "4_13": {
+      "class_id": 934,
+      "prob": 0.10409314185380936,
+      "top_3_channel_ids": [
+        88,
+        65,
+        78
+      ],
+      "saliency_url": "/api/precomputed/hotdog/4_13_saliency.png"
+    },
+    "5_0": {
+      "class_id": 767,
+      "prob": 0.2457231730222702,
+      "top_3_channel_ids": [
+        21,
+        137,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_0_saliency.png"
+    },
+    "5_1": {
+      "class_id": 723,
+      "prob": 0.13952293992042542,
+      "top_3_channel_ids": [
+        21,
+        104,
+        32
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_1_saliency.png"
+    },
+    "5_2": {
+      "class_id": 917,
+      "prob": 0.07221899926662445,
+      "top_3_channel_ids": [
+        21,
+        84,
+        153
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_2_saliency.png"
+    },
+    "5_3": {
+      "class_id": 728,
+      "prob": 0.24070747196674347,
+      "top_3_channel_ids": [
+        21,
+        188,
+        45
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_3_saliency.png"
+    },
+    "5_4": {
+      "class_id": 728,
+      "prob": 0.2654053866863251,
+      "top_3_channel_ids": [
+        21,
+        76,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_4_saliency.png"
+    },
+    "5_5": {
+      "class_id": 998,
+      "prob": 0.07622948288917542,
+      "top_3_channel_ids": [
+        21,
+        5,
+        163
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_5_saliency.png"
+    },
+    "5_6": {
+      "class_id": 767,
+      "prob": 0.1612711399793625,
+      "top_3_channel_ids": [
+        21,
+        86,
+        54
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_6_saliency.png"
+    },
+    "5_7": {
+      "class_id": 953,
+      "prob": 0.332986056804657,
+      "top_3_channel_ids": [
+        21,
+        80,
+        71
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_7_saliency.png"
+    },
+    "5_8": {
+      "class_id": 728,
+      "prob": 0.10565372556447983,
+      "top_3_channel_ids": [
+        21,
+        125,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_8_saliency.png"
+    },
+    "5_9": {
+      "class_id": 917,
+      "prob": 0.6164546608924866,
+      "top_3_channel_ids": [
+        29,
+        125,
+        178
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_9_saliency.png"
+    },
+    "5_10": {
+      "class_id": 614,
+      "prob": 0.17748896777629852,
+      "top_3_channel_ids": [
+        21,
+        53,
+        182
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_10_saliency.png"
+    },
+    "5_11": {
+      "class_id": 728,
+      "prob": 0.5614832043647766,
+      "top_3_channel_ids": [
+        21,
+        181,
+        45
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_11_saliency.png"
+    },
+    "5_12": {
+      "class_id": 692,
+      "prob": 0.13034774363040924,
+      "top_3_channel_ids": [
+        21,
+        160,
+        13
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_12_saliency.png"
+    },
+    "5_13": {
+      "class_id": 693,
+      "prob": 0.05097110942006111,
+      "top_3_channel_ids": [
+        21,
+        43,
+        82
+      ],
+      "saliency_url": "/api/precomputed/hotdog/5_13_saliency.png"
+    },
+    "6_0": {
+      "class_id": 917,
+      "prob": 0.8610061407089233,
+      "top_3_channel_ids": [
+        21,
+        4,
+        87
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_0_saliency.png"
+    },
+    "6_1": {
+      "class_id": 723,
+      "prob": 0.30467352271080017,
+      "top_3_channel_ids": [
+        21,
+        65,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_1_saliency.png"
+    },
+    "6_2": {
+      "class_id": 701,
+      "prob": 0.08272702246904373,
+      "top_3_channel_ids": [
+        21,
+        79,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_2_saliency.png"
+    },
+    "6_3": {
+      "class_id": 728,
+      "prob": 0.31970441341400146,
+      "top_3_channel_ids": [
+        21,
+        181,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_3_saliency.png"
+    },
+    "6_4": {
+      "class_id": 934,
+      "prob": 0.2625240087509155,
+      "top_3_channel_ids": [
+        21,
+        88,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_4_saliency.png"
+    },
+    "6_5": {
+      "class_id": 917,
+      "prob": 0.27894723415374756,
+      "top_3_channel_ids": [
+        21,
+        87,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_5_saliency.png"
+    },
+    "6_6": {
+      "class_id": 917,
+      "prob": 0.07977782189846039,
+      "top_3_channel_ids": [
+        21,
+        87,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_6_saliency.png"
+    },
+    "6_7": {
+      "class_id": 917,
+      "prob": 0.7972137928009033,
+      "top_3_channel_ids": [
+        21,
+        29,
+        19
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_7_saliency.png"
+    },
+    "6_8": {
+      "class_id": 728,
+      "prob": 0.14557215571403503,
+      "top_3_channel_ids": [
+        21,
+        125,
+        76
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_8_saliency.png"
+    },
+    "6_9": {
+      "class_id": 692,
+      "prob": 0.11006993055343628,
+      "top_3_channel_ids": [
+        21,
+        39,
+        148
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_9_saliency.png"
+    },
+    "6_10": {
+      "class_id": 728,
+      "prob": 0.2226734608411789,
+      "top_3_channel_ids": [
+        21,
+        181,
+        89
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_10_saliency.png"
+    },
+    "6_11": {
+      "class_id": 728,
+      "prob": 0.26155951619148254,
+      "top_3_channel_ids": [
+        21,
+        181,
+        51
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_11_saliency.png"
+    },
+    "6_12": {
+      "class_id": 934,
+      "prob": 0.20402482151985168,
+      "top_3_channel_ids": [
+        21,
+        88,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_12_saliency.png"
+    },
+    "6_13": {
+      "class_id": 830,
+      "prob": 0.1267937868833542,
+      "top_3_channel_ids": [
+        21,
+        88,
+        157
+      ],
+      "saliency_url": "/api/precomputed/hotdog/6_13_saliency.png"
+    },
+    "7_0": {
+      "class_id": 457,
+      "prob": 0.1975409835577011,
+      "top_3_channel_ids": [
+        21,
+        5,
+        171
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_0_saliency.png"
+    },
+    "7_1": {
+      "class_id": 721,
+      "prob": 0.16698235273361206,
+      "top_3_channel_ids": [
+        21,
+        69,
+        160
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_1_saliency.png"
+    },
+    "7_2": {
+      "class_id": 788,
+      "prob": 0.19435331225395203,
+      "top_3_channel_ids": [
+        21,
+        104,
+        174
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_2_saliency.png"
+    },
+    "7_3": {
+      "class_id": 917,
+      "prob": 0.8556025624275208,
+      "top_3_channel_ids": [
+        21,
+        115,
+        153
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_3_saliency.png"
+    },
+    "7_4": {
+      "class_id": 692,
+      "prob": 0.24591805040836334,
+      "top_3_channel_ids": [
+        21,
+        32,
+        126
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_4_saliency.png"
+    },
+    "7_5": {
+      "class_id": 917,
+      "prob": 0.09692317247390747,
+      "top_3_channel_ids": [
+        21,
+        181,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_5_saliency.png"
+    },
+    "7_6": {
+      "class_id": 879,
+      "prob": 0.14351151883602142,
+      "top_3_channel_ids": [
+        21,
+        9,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_6_saliency.png"
+    },
+    "7_7": {
+      "class_id": 549,
+      "prob": 0.2557235360145569,
+      "top_3_channel_ids": [
+        21,
+        47,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_7_saliency.png"
+    },
+    "7_8": {
+      "class_id": 457,
+      "prob": 0.1564347892999649,
+      "top_3_channel_ids": [
+        21,
+        5,
+        35
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_8_saliency.png"
+    },
+    "7_9": {
+      "class_id": 750,
+      "prob": 0.05215216428041458,
+      "top_3_channel_ids": [
+        21,
+        115,
+        181
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_9_saliency.png"
+    },
+    "7_10": {
+      "class_id": 96,
+      "prob": 0.10375165194272995,
+      "top_3_channel_ids": [
+        13,
+        106,
+        41
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_10_saliency.png"
+    },
+    "7_11": {
+      "class_id": 723,
+      "prob": 0.1591486632823944,
+      "top_3_channel_ids": [
+        21,
+        172,
+        60
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_11_saliency.png"
+    },
+    "7_12": {
+      "class_id": 549,
+      "prob": 0.08268024772405624,
+      "top_3_channel_ids": [
+        21,
+        5,
+        121
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_12_saliency.png"
+    },
+    "7_13": {
+      "class_id": 777,
+      "prob": 0.06797727942466736,
+      "top_3_channel_ids": [
+        21,
+        4,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/7_13_saliency.png"
+    },
+    "8_0": {
+      "class_id": 728,
+      "prob": 0.21925516426563263,
+      "top_3_channel_ids": [
+        21,
+        88,
+        181
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_0_saliency.png"
+    },
+    "8_1": {
+      "class_id": 934,
+      "prob": 0.08974973112344742,
+      "top_3_channel_ids": [
+        21,
+        78,
+        62
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_1_saliency.png"
+    },
+    "8_2": {
+      "class_id": 917,
+      "prob": 0.885678768157959,
+      "top_3_channel_ids": [
+        21,
+        87,
+        63
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_2_saliency.png"
+    },
+    "8_3": {
+      "class_id": 614,
+      "prob": 0.16630001366138458,
+      "top_3_channel_ids": [
+        21,
+        46,
+        160
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_3_saliency.png"
+    },
+    "8_4": {
+      "class_id": 934,
+      "prob": 0.1412353813648224,
+      "top_3_channel_ids": [
+        21,
+        88,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_4_saliency.png"
+    },
+    "8_5": {
+      "class_id": 750,
+      "prob": 0.37185072898864746,
+      "top_3_channel_ids": [
+        21,
+        186,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_5_saliency.png"
+    },
+    "8_6": {
+      "class_id": 549,
+      "prob": 0.21933285892009735,
+      "top_3_channel_ids": [
+        21,
+        5,
+        84
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_6_saliency.png"
+    },
+    "8_7": {
+      "class_id": 728,
+      "prob": 0.13354182243347168,
+      "top_3_channel_ids": [
+        21,
+        188,
+        13
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_7_saliency.png"
+    },
+    "8_8": {
+      "class_id": 723,
+      "prob": 0.07506094872951508,
+      "top_3_channel_ids": [
+        21,
+        162,
+        136
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_8_saliency.png"
+    },
+    "8_9": {
+      "class_id": 591,
+      "prob": 0.153557687997818,
+      "top_3_channel_ids": [
+        21,
+        5,
+        38
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_9_saliency.png"
+    },
+    "8_10": {
+      "class_id": 476,
+      "prob": 0.10572070628404617,
+      "top_3_channel_ids": [
+        5,
+        122,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_10_saliency.png"
+    },
+    "8_11": {
+      "class_id": 644,
+      "prob": 0.03912542015314102,
+      "top_3_channel_ids": [
+        21,
+        16,
+        97
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_11_saliency.png"
+    },
+    "8_12": {
+      "class_id": 477,
+      "prob": 0.10498262196779251,
+      "top_3_channel_ids": [
+        13,
+        20,
+        181
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_12_saliency.png"
+    },
+    "8_13": {
+      "class_id": 692,
+      "prob": 0.20665566623210907,
+      "top_3_channel_ids": [
+        21,
+        13,
+        56
+      ],
+      "saliency_url": "/api/precomputed/hotdog/8_13_saliency.png"
+    },
+    "9_0": {
+      "class_id": 934,
+      "prob": 0.25672441720962524,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_0_saliency.png"
+    },
+    "9_1": {
+      "class_id": 614,
+      "prob": 0.2067062258720398,
+      "top_3_channel_ids": [
+        21,
+        141,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_1_saliency.png"
+    },
+    "9_2": {
+      "class_id": 569,
+      "prob": 0.049914706498384476,
+      "top_3_channel_ids": [
+        21,
+        51,
+        63
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_2_saliency.png"
+    },
+    "9_3": {
+      "class_id": 391,
+      "prob": 0.14152443408966064,
+      "top_3_channel_ids": [
+        170,
+        21,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_3_saliency.png"
+    },
+    "9_4": {
+      "class_id": 549,
+      "prob": 0.1414363980293274,
+      "top_3_channel_ids": [
+        21,
+        128,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_4_saliency.png"
+    },
+    "9_5": {
+      "class_id": 917,
+      "prob": 0.27344247698783875,
+      "top_3_channel_ids": [
+        21,
+        38,
+        115
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_5_saliency.png"
+    },
+    "9_6": {
+      "class_id": 728,
+      "prob": 0.33240920305252075,
+      "top_3_channel_ids": [
+        21,
+        88,
+        45
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_6_saliency.png"
+    },
+    "9_7": {
+      "class_id": 788,
+      "prob": 0.11245998740196228,
+      "top_3_channel_ids": [
+        21,
+        88,
+        182
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_7_saliency.png"
+    },
+    "9_8": {
+      "class_id": 457,
+      "prob": 0.07783354073762894,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_8_saliency.png"
+    },
+    "9_9": {
+      "class_id": 934,
+      "prob": 0.10004065930843353,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_9_saliency.png"
+    },
+    "9_10": {
+      "class_id": 509,
+      "prob": 0.33107513189315796,
+      "top_3_channel_ids": [
+        60,
+        20,
+        76
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_10_saliency.png"
+    },
+    "9_11": {
+      "class_id": 723,
+      "prob": 0.0759204775094986,
+      "top_3_channel_ids": [
+        21,
+        162,
+        172
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_11_saliency.png"
+    },
+    "9_12": {
+      "class_id": 165,
+      "prob": 0.06672170013189316,
+      "top_3_channel_ids": [
+        105,
+        126,
+        11
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_12_saliency.png"
+    },
+    "9_13": {
+      "class_id": 934,
+      "prob": 0.06436584889888763,
+      "top_3_channel_ids": [
+        65,
+        21,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/9_13_saliency.png"
+    },
+    "10_0": {
+      "class_id": 934,
+      "prob": 0.2596020996570587,
+      "top_3_channel_ids": [
+        21,
+        88,
+        137
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_0_saliency.png"
+    },
+    "10_1": {
+      "class_id": 389,
+      "prob": 0.06091460585594177,
+      "top_3_channel_ids": [
+        21,
+        39,
+        82
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_1_saliency.png"
+    },
+    "10_2": {
+      "class_id": 917,
+      "prob": 0.36594441533088684,
+      "top_3_channel_ids": [
+        21,
+        160,
+        24
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_2_saliency.png"
+    },
+    "10_3": {
+      "class_id": 591,
+      "prob": 0.17093060910701752,
+      "top_3_channel_ids": [
+        21,
+        170,
+        83
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_3_saliency.png"
+    },
+    "10_4": {
+      "class_id": 591,
+      "prob": 0.07751564681529999,
+      "top_3_channel_ids": [
+        21,
+        38,
+        165
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_4_saliency.png"
+    },
+    "10_5": {
+      "class_id": 549,
+      "prob": 0.05600156635046005,
+      "top_3_channel_ids": [
+        21,
+        5,
+        47
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_5_saliency.png"
+    },
+    "10_6": {
+      "class_id": 934,
+      "prob": 0.1415957808494568,
+      "top_3_channel_ids": [
+        21,
+        97,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_6_saliency.png"
+    },
+    "10_7": {
+      "class_id": 917,
+      "prob": 0.3355996608734131,
+      "top_3_channel_ids": [
+        21,
+        29,
+        87
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_7_saliency.png"
+    },
+    "10_8": {
+      "class_id": 750,
+      "prob": 0.6582896113395691,
+      "top_3_channel_ids": [
+        21,
+        98,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_8_saliency.png"
+    },
+    "10_9": {
+      "class_id": 858,
+      "prob": 0.09997890889644623,
+      "top_3_channel_ids": [
+        88,
+        21,
+        143
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_9_saliency.png"
+    },
+    "10_10": {
+      "class_id": 457,
+      "prob": 0.038558922708034515,
+      "top_3_channel_ids": [
+        21,
+        5,
+        20
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_10_saliency.png"
+    },
+    "10_11": {
+      "class_id": 934,
+      "prob": 0.4587961733341217,
+      "top_3_channel_ids": [
+        21,
+        65,
+        135
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_11_saliency.png"
+    },
+    "10_12": {
+      "class_id": 934,
+      "prob": 0.3067600727081299,
+      "top_3_channel_ids": [
+        21,
+        88,
+        17
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_12_saliency.png"
+    },
+    "10_13": {
+      "class_id": 723,
+      "prob": 0.25165626406669617,
+      "top_3_channel_ids": [
+        21,
+        150,
+        104
+      ],
+      "saliency_url": "/api/precomputed/hotdog/10_13_saliency.png"
+    },
+    "11_0": {
+      "class_id": 750,
+      "prob": 0.29904013872146606,
+      "top_3_channel_ids": [
+        182,
+        65,
+        87
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_0_saliency.png"
+    },
+    "11_1": {
+      "class_id": 917,
+      "prob": 0.4450301229953766,
+      "top_3_channel_ids": [
+        21,
+        160,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_1_saliency.png"
+    },
+    "11_2": {
+      "class_id": 692,
+      "prob": 0.21161849796772003,
+      "top_3_channel_ids": [
+        21,
+        39,
+        13
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_2_saliency.png"
+    },
+    "11_3": {
+      "class_id": 987,
+      "prob": 0.08428841084241867,
+      "top_3_channel_ids": [
+        21,
+        93,
+        143
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_3_saliency.png"
+    },
+    "11_4": {
+      "class_id": 934,
+      "prob": 0.17936094105243683,
+      "top_3_channel_ids": [
+        21,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_4_saliency.png"
+    },
+    "11_5": {
+      "class_id": 788,
+      "prob": 0.06259564310312271,
+      "top_3_channel_ids": [
+        88,
+        21,
+        93
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_5_saliency.png"
+    },
+    "11_6": {
+      "class_id": 785,
+      "prob": 0.07109963893890381,
+      "top_3_channel_ids": [
+        21,
+        115,
+        91
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_6_saliency.png"
+    },
+    "11_7": {
+      "class_id": 917,
+      "prob": 0.6504241228103638,
+      "top_3_channel_ids": [
+        21,
+        87,
+        38
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_7_saliency.png"
+    },
+    "11_8": {
+      "class_id": 917,
+      "prob": 0.6023963093757629,
+      "top_3_channel_ids": [
+        21,
+        87,
+        22
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_8_saliency.png"
+    },
+    "11_9": {
+      "class_id": 871,
+      "prob": 0.09152542799711227,
+      "top_3_channel_ids": [
+        21,
+        5,
+        90
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_9_saliency.png"
+    },
+    "11_10": {
+      "class_id": 934,
+      "prob": 0.39383864402770996,
+      "top_3_channel_ids": [
+        2,
+        88,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_10_saliency.png"
+    },
+    "11_11": {
+      "class_id": 96,
+      "prob": 0.3876493573188782,
+      "top_3_channel_ids": [
+        21,
+        148,
+        188
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_11_saliency.png"
+    },
+    "11_12": {
+      "class_id": 457,
+      "prob": 0.09697582572698593,
+      "top_3_channel_ids": [
+        21,
+        84,
+        142
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_12_saliency.png"
+    },
+    "11_13": {
+      "class_id": 549,
+      "prob": 0.14994291961193085,
+      "top_3_channel_ids": [
+        21,
+        188,
+        5
+      ],
+      "saliency_url": "/api/precomputed/hotdog/11_13_saliency.png"
+    },
+    "12_0": {
+      "class_id": 879,
+      "prob": 0.1848892867565155,
+      "top_3_channel_ids": [
+        21,
+        84,
+        133
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_0_saliency.png"
+    },
+    "12_1": {
+      "class_id": 917,
+      "prob": 0.1784200668334961,
+      "top_3_channel_ids": [
+        21,
+        115,
+        160
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_1_saliency.png"
+    },
+    "12_2": {
+      "class_id": 596,
+      "prob": 0.07457809150218964,
+      "top_3_channel_ids": [
+        22,
+        182,
+        21
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_2_saliency.png"
+    },
+    "12_3": {
+      "class_id": 954,
+      "prob": 0.05826769024133682,
+      "top_3_channel_ids": [
+        21,
+        103,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_3_saliency.png"
+    },
+    "12_4": {
+      "class_id": 942,
+      "prob": 0.09988519549369812,
+      "top_3_channel_ids": [
+        22,
+        21,
+        9
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_4_saliency.png"
+    },
+    "12_5": {
+      "class_id": 723,
+      "prob": 0.3110559582710266,
+      "top_3_channel_ids": [
+        21,
+        78,
+        30
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_5_saliency.png"
+    },
+    "12_6": {
+      "class_id": 723,
+      "prob": 0.40245431661605835,
+      "top_3_channel_ids": [
+        21,
+        26,
+        162
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_6_saliency.png"
+    },
+    "12_7": {
+      "class_id": 917,
+      "prob": 0.4703916907310486,
+      "top_3_channel_ids": [
+        21,
+        29,
+        149
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_7_saliency.png"
+    },
+    "12_8": {
+      "class_id": 917,
+      "prob": 0.8074079751968384,
+      "top_3_channel_ids": [
+        21,
+        84,
+        90
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_8_saliency.png"
+    },
+    "12_9": {
+      "class_id": 917,
+      "prob": 0.322763055562973,
+      "top_3_channel_ids": [
+        21,
+        19,
+        29
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_9_saliency.png"
+    },
+    "12_10": {
+      "class_id": 865,
+      "prob": 0.11051880568265915,
+      "top_3_channel_ids": [
+        21,
+        65,
+        166
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_10_saliency.png"
+    },
+    "12_11": {
+      "class_id": 985,
+      "prob": 0.31483161449432373,
+      "top_3_channel_ids": [
+        21,
+        182,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_11_saliency.png"
+    },
+    "12_12": {
+      "class_id": 723,
+      "prob": 0.11948836594820023,
+      "top_3_channel_ids": [
+        21,
+        26,
+        104
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_12_saliency.png"
+    },
+    "12_13": {
+      "class_id": 788,
+      "prob": 0.344738632440567,
+      "top_3_channel_ids": [
+        21,
+        88,
+        18
+      ],
+      "saliency_url": "/api/precomputed/hotdog/12_13_saliency.png"
+    },
+    "13_0": {
+      "class_id": 723,
+      "prob": 0.17420423030853271,
+      "top_3_channel_ids": [
+        21,
+        162,
+        136
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_0_saliency.png"
+    },
+    "13_1": {
+      "class_id": 767,
+      "prob": 0.06760719418525696,
+      "top_3_channel_ids": [
+        21,
+        162,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_1_saliency.png"
+    },
+    "13_2": {
+      "class_id": 614,
+      "prob": 0.14416241645812988,
+      "top_3_channel_ids": [
+        21,
+        182,
+        86
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_2_saliency.png"
+    },
+    "13_3": {
+      "class_id": 934,
+      "prob": 0.4829471707344055,
+      "top_3_channel_ids": [
+        21,
+        65,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_3_saliency.png"
+    },
+    "13_4": {
+      "class_id": 723,
+      "prob": 0.06494249403476715,
+      "top_3_channel_ids": [
+        21,
+        162,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_4_saliency.png"
+    },
+    "13_5": {
+      "class_id": 614,
+      "prob": 0.06093452870845795,
+      "top_3_channel_ids": [
+        21,
+        96,
+        97
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_5_saliency.png"
+    },
+    "13_6": {
+      "class_id": 723,
+      "prob": 0.5520209074020386,
+      "top_3_channel_ids": [
+        21,
+        65,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_6_saliency.png"
+    },
+    "13_7": {
+      "class_id": 934,
+      "prob": 0.10309384763240814,
+      "top_3_channel_ids": [
+        21,
+        65,
+        45
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_7_saliency.png"
+    },
+    "13_8": {
+      "class_id": 584,
+      "prob": 0.07731714844703674,
+      "top_3_channel_ids": [
+        21,
+        30,
+        65
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_8_saliency.png"
+    },
+    "13_9": {
+      "class_id": 985,
+      "prob": 0.17185412347316742,
+      "top_3_channel_ids": [
+        65,
+        182,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_9_saliency.png"
+    },
+    "13_10": {
+      "class_id": 723,
+      "prob": 0.1844497174024582,
+      "top_3_channel_ids": [
+        21,
+        42,
+        162
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_10_saliency.png"
+    },
+    "13_11": {
+      "class_id": 934,
+      "prob": 0.16827906668186188,
+      "top_3_channel_ids": [
+        21,
+        78,
+        88
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_11_saliency.png"
+    },
+    "13_12": {
+      "class_id": 917,
+      "prob": 0.21226026117801666,
+      "top_3_channel_ids": [
+        21,
+        23,
+        125
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_12_saliency.png"
+    },
+    "13_13": {
+      "class_id": 934,
+      "prob": 0.16289347410202026,
+      "top_3_channel_ids": [
+        21,
+        88,
+        78
+      ],
+      "saliency_url": "/api/precomputed/hotdog/13_13_saliency.png"
+    }
+  }
+}

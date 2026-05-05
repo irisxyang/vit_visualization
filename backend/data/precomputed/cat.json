@@ -1,0 +1,1977 @@
+{
+  "image_id": "cat",
+  "image_url": "/api/images/cat.png",
+  "image_hash": "42b40fc8e30f625c",
+  "original": {
+    "class_id": 285,
+    "prob": 45.00786209106445,
+    "top_3_channel_ids": [
+      21,
+      117,
+      73
+    ],
+    "saliency_url": "/api/precomputed/cat/original_saliency.png"
+  },
+  "patches": {
+    "0_0": {
+      "class_id": 750,
+      "prob": 0.09929239749908447,
+      "top_3_channel_ids": [
+        21,
+        25,
+        10
+      ],
+      "saliency_url": "/api/precomputed/cat/0_0_saliency.png"
+    },
+    "0_1": {
+      "class_id": 359,
+      "prob": 0.07912223786115646,
+      "top_3_channel_ids": [
+        95,
+        70,
+        31
+      ],
+      "saliency_url": "/api/precomputed/cat/0_1_saliency.png"
+    },
+    "0_2": {
+      "class_id": 750,
+      "prob": 0.07155239582061768,
+      "top_3_channel_ids": [
+        21,
+        117,
+        25
+      ],
+      "saliency_url": "/api/precomputed/cat/0_2_saliency.png"
+    },
+    "0_3": {
+      "class_id": 750,
+      "prob": 0.07449758797883987,
+      "top_3_channel_ids": [
+        98,
+        117,
+        161
+      ],
+      "saliency_url": "/api/precomputed/cat/0_3_saliency.png"
+    },
+    "0_4": {
+      "class_id": 338,
+      "prob": 0.12464958429336548,
+      "top_3_channel_ids": [
+        21,
+        25,
+        86
+      ],
+      "saliency_url": "/api/precomputed/cat/0_4_saliency.png"
+    },
+    "0_5": {
+      "class_id": 29,
+      "prob": 0.05797065049409866,
+      "top_3_channel_ids": [
+        21,
+        129,
+        87
+      ],
+      "saliency_url": "/api/precomputed/cat/0_5_saliency.png"
+    },
+    "0_6": {
+      "class_id": 212,
+      "prob": 0.0358399972319603,
+      "top_3_channel_ids": [
+        168,
+        14,
+        39
+      ],
+      "saliency_url": "/api/precomputed/cat/0_6_saliency.png"
+    },
+    "0_7": {
+      "class_id": 359,
+      "prob": 0.10037291795015335,
+      "top_3_channel_ids": [
+        21,
+        95,
+        70
+      ],
+      "saliency_url": "/api/precomputed/cat/0_7_saliency.png"
+    },
+    "0_8": {
+      "class_id": 659,
+      "prob": 0.037742678076028824,
+      "top_3_channel_ids": [
+        87,
+        84,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/0_8_saliency.png"
+    },
+    "0_9": {
+      "class_id": 171,
+      "prob": 0.2307502031326294,
+      "top_3_channel_ids": [
+        21,
+        182,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/0_9_saliency.png"
+    },
+    "0_10": {
+      "class_id": 526,
+      "prob": 0.05965705215930939,
+      "top_3_channel_ids": [
+        21,
+        25,
+        129
+      ],
+      "saliency_url": "/api/precomputed/cat/0_10_saliency.png"
+    },
+    "0_11": {
+      "class_id": 750,
+      "prob": 0.1305418312549591,
+      "top_3_channel_ids": [
+        21,
+        160,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/0_11_saliency.png"
+    },
+    "0_12": {
+      "class_id": 508,
+      "prob": 0.11736631393432617,
+      "top_3_channel_ids": [
+        21,
+        20,
+        157
+      ],
+      "saliency_url": "/api/precomputed/cat/0_12_saliency.png"
+    },
+    "0_13": {
+      "class_id": 750,
+      "prob": 0.22416850924491882,
+      "top_3_channel_ids": [
+        21,
+        32,
+        25
+      ],
+      "saliency_url": "/api/precomputed/cat/0_13_saliency.png"
+    },
+    "1_0": {
+      "class_id": 753,
+      "prob": 0.07311812788248062,
+      "top_3_channel_ids": [
+        21,
+        129,
+        37
+      ],
+      "saliency_url": "/api/precomputed/cat/1_0_saliency.png"
+    },
+    "1_1": {
+      "class_id": 356,
+      "prob": 0.05562720447778702,
+      "top_3_channel_ids": [
+        21,
+        129,
+        106
+      ],
+      "saliency_url": "/api/precomputed/cat/1_1_saliency.png"
+    },
+    "1_2": {
+      "class_id": 750,
+      "prob": 0.06953708827495575,
+      "top_3_channel_ids": [
+        21,
+        16,
+        25
+      ],
+      "saliency_url": "/api/precomputed/cat/1_2_saliency.png"
+    },
+    "1_3": {
+      "class_id": 333,
+      "prob": 0.03937580808997154,
+      "top_3_channel_ids": [
+        106,
+        52,
+        187
+      ],
+      "saliency_url": "/api/precomputed/cat/1_3_saliency.png"
+    },
+    "1_4": {
+      "class_id": 283,
+      "prob": 0.09174736589193344,
+      "top_3_channel_ids": [
+        21,
+        160,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/1_4_saliency.png"
+    },
+    "1_5": {
+      "class_id": 285,
+      "prob": 0.12171410024166107,
+      "top_3_channel_ids": [
+        21,
+        131,
+        57
+      ],
+      "saliency_url": "/api/precomputed/cat/1_5_saliency.png"
+    },
+    "1_6": {
+      "class_id": 737,
+      "prob": 0.09633597731590271,
+      "top_3_channel_ids": [
+        64,
+        21,
+        162
+      ],
+      "saliency_url": "/api/precomputed/cat/1_6_saliency.png"
+    },
+    "1_7": {
+      "class_id": 790,
+      "prob": 0.04674804210662842,
+      "top_3_channel_ids": [
+        21,
+        70,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/1_7_saliency.png"
+    },
+    "1_8": {
+      "class_id": 151,
+      "prob": 0.5056533217430115,
+      "top_3_channel_ids": [
+        21,
+        131,
+        166
+      ],
+      "saliency_url": "/api/precomputed/cat/1_8_saliency.png"
+    },
+    "1_9": {
+      "class_id": 151,
+      "prob": 0.3679959774017334,
+      "top_3_channel_ids": [
+        21,
+        131,
+        52
+      ],
+      "saliency_url": "/api/precomputed/cat/1_9_saliency.png"
+    },
+    "1_10": {
+      "class_id": 117,
+      "prob": 0.1522548794746399,
+      "top_3_channel_ids": [
+        5,
+        21,
+        93
+      ],
+      "saliency_url": "/api/precomputed/cat/1_10_saliency.png"
+    },
+    "1_11": {
+      "class_id": 151,
+      "prob": 0.13243316113948822,
+      "top_3_channel_ids": [
+        21,
+        131,
+        113
+      ],
+      "saliency_url": "/api/precomputed/cat/1_11_saliency.png"
+    },
+    "1_12": {
+      "class_id": 750,
+      "prob": 0.10617443919181824,
+      "top_3_channel_ids": [
+        21,
+        117,
+        98
+      ],
+      "saliency_url": "/api/precomputed/cat/1_12_saliency.png"
+    },
+    "1_13": {
+      "class_id": 750,
+      "prob": 0.12583942711353302,
+      "top_3_channel_ids": [
+        21,
+        10,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/1_13_saliency.png"
+    },
+    "2_0": {
+      "class_id": 753,
+      "prob": 0.12797965109348297,
+      "top_3_channel_ids": [
+        87,
+        129,
+        21
+      ],
+      "saliency_url": "/api/precomputed/cat/2_0_saliency.png"
+    },
+    "2_1": {
+      "class_id": 508,
+      "prob": 0.19052714109420776,
+      "top_3_channel_ids": [
+        140,
+        163,
+        157
+      ],
+      "saliency_url": "/api/precomputed/cat/2_1_saliency.png"
+    },
+    "2_2": {
+      "class_id": 151,
+      "prob": 0.05378889665007591,
+      "top_3_channel_ids": [
+        21,
+        112,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/2_2_saliency.png"
+    },
+    "2_3": {
+      "class_id": 151,
+      "prob": 0.07666224986314774,
+      "top_3_channel_ids": [
+        21,
+        131,
+        110
+      ],
+      "saliency_url": "/api/precomputed/cat/2_3_saliency.png"
+    },
+    "2_4": {
+      "class_id": 151,
+      "prob": 0.09911880642175674,
+      "top_3_channel_ids": [
+        21,
+        131,
+        112
+      ],
+      "saliency_url": "/api/precomputed/cat/2_4_saliency.png"
+    },
+    "2_5": {
+      "class_id": 539,
+      "prob": 0.05653584748506546,
+      "top_3_channel_ids": [
+        20,
+        21,
+        87
+      ],
+      "saliency_url": "/api/precomputed/cat/2_5_saliency.png"
+    },
+    "2_6": {
+      "class_id": 151,
+      "prob": 0.15364310145378113,
+      "top_3_channel_ids": [
+        21,
+        131,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/2_6_saliency.png"
+    },
+    "2_7": {
+      "class_id": 917,
+      "prob": 0.5435476303100586,
+      "top_3_channel_ids": [
+        21,
+        87,
+        1
+      ],
+      "saliency_url": "/api/precomputed/cat/2_7_saliency.png"
+    },
+    "2_8": {
+      "class_id": 721,
+      "prob": 0.15206342935562134,
+      "top_3_channel_ids": [
+        21,
+        38,
+        69
+      ],
+      "saliency_url": "/api/precomputed/cat/2_8_saliency.png"
+    },
+    "2_9": {
+      "class_id": 828,
+      "prob": 0.030197476968169212,
+      "top_3_channel_ids": [
+        21,
+        106,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/2_9_saliency.png"
+    },
+    "2_10": {
+      "class_id": 151,
+      "prob": 0.04654847830533981,
+      "top_3_channel_ids": [
+        21,
+        131,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/2_10_saliency.png"
+    },
+    "2_11": {
+      "class_id": 545,
+      "prob": 0.08838864415884018,
+      "top_3_channel_ids": [
+        21,
+        8,
+        86
+      ],
+      "saliency_url": "/api/precomputed/cat/2_11_saliency.png"
+    },
+    "2_12": {
+      "class_id": 745,
+      "prob": 0.05544226989150047,
+      "top_3_channel_ids": [
+        21,
+        10,
+        129
+      ],
+      "saliency_url": "/api/precomputed/cat/2_12_saliency.png"
+    },
+    "2_13": {
+      "class_id": 750,
+      "prob": 0.16139809787273407,
+      "top_3_channel_ids": [
+        21,
+        117,
+        51
+      ],
+      "saliency_url": "/api/precomputed/cat/2_13_saliency.png"
+    },
+    "3_0": {
+      "class_id": 283,
+      "prob": 0.06857965141534805,
+      "top_3_channel_ids": [
+        21,
+        110,
+        115
+      ],
+      "saliency_url": "/api/precomputed/cat/3_0_saliency.png"
+    },
+    "3_1": {
+      "class_id": 203,
+      "prob": 0.06752514839172363,
+      "top_3_channel_ids": [
+        148,
+        188,
+        140
+      ],
+      "saliency_url": "/api/precomputed/cat/3_1_saliency.png"
+    },
+    "3_2": {
+      "class_id": 332,
+      "prob": 0.07371726632118225,
+      "top_3_channel_ids": [
+        21,
+        160,
+        129
+      ],
+      "saliency_url": "/api/precomputed/cat/3_2_saliency.png"
+    },
+    "3_3": {
+      "class_id": 539,
+      "prob": 0.062369395047426224,
+      "top_3_channel_ids": [
+        29,
+        20,
+        87
+      ],
+      "saliency_url": "/api/precomputed/cat/3_3_saliency.png"
+    },
+    "3_4": {
+      "class_id": 151,
+      "prob": 0.04358106851577759,
+      "top_3_channel_ids": [
+        21,
+        106,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/3_4_saliency.png"
+    },
+    "3_5": {
+      "class_id": 356,
+      "prob": 0.05127866193652153,
+      "top_3_channel_ids": [
+        21,
+        106,
+        97
+      ],
+      "saliency_url": "/api/precomputed/cat/3_5_saliency.png"
+    },
+    "3_6": {
+      "class_id": 285,
+      "prob": 0.16764238476753235,
+      "top_3_channel_ids": [
+        21,
+        10,
+        73
+      ],
+      "saliency_url": "/api/precomputed/cat/3_6_saliency.png"
+    },
+    "3_7": {
+      "class_id": 359,
+      "prob": 0.0184040367603302,
+      "top_3_channel_ids": [
+        21,
+        106,
+        27
+      ],
+      "saliency_url": "/api/precomputed/cat/3_7_saliency.png"
+    },
+    "3_8": {
+      "class_id": 806,
+      "prob": 0.02590993046760559,
+      "top_3_channel_ids": [
+        21,
+        13,
+        178
+      ],
+      "saliency_url": "/api/precomputed/cat/3_8_saliency.png"
+    },
+    "3_9": {
+      "class_id": 171,
+      "prob": 0.09644614905118942,
+      "top_3_channel_ids": [
+        21,
+        38,
+        112
+      ],
+      "saliency_url": "/api/precomputed/cat/3_9_saliency.png"
+    },
+    "3_10": {
+      "class_id": 750,
+      "prob": 0.11313144862651825,
+      "top_3_channel_ids": [
+        21,
+        110,
+        163
+      ],
+      "saliency_url": "/api/precomputed/cat/3_10_saliency.png"
+    },
+    "3_11": {
+      "class_id": 723,
+      "prob": 0.2267356514930725,
+      "top_3_channel_ids": [
+        21,
+        59,
+        26
+      ],
+      "saliency_url": "/api/precomputed/cat/3_11_saliency.png"
+    },
+    "3_12": {
+      "class_id": 285,
+      "prob": 0.1263500154018402,
+      "top_3_channel_ids": [
+        21,
+        117,
+        92
+      ],
+      "saliency_url": "/api/precomputed/cat/3_12_saliency.png"
+    },
+    "3_13": {
+      "class_id": 750,
+      "prob": 0.20418421924114227,
+      "top_3_channel_ids": [
+        51,
+        99,
+        188
+      ],
+      "saliency_url": "/api/precomputed/cat/3_13_saliency.png"
+    },
+    "4_0": {
+      "class_id": 151,
+      "prob": 0.08158554881811142,
+      "top_3_channel_ids": [
+        131,
+        52,
+        106
+      ],
+      "saliency_url": "/api/precomputed/cat/4_0_saliency.png"
+    },
+    "4_1": {
+      "class_id": 338,
+      "prob": 0.04408043995499611,
+      "top_3_channel_ids": [
+        21,
+        89,
+        150
+      ],
+      "saliency_url": "/api/precomputed/cat/4_1_saliency.png"
+    },
+    "4_2": {
+      "class_id": 539,
+      "prob": 0.09261427074670792,
+      "top_3_channel_ids": [
+        21,
+        182,
+        29
+      ],
+      "saliency_url": "/api/precomputed/cat/4_2_saliency.png"
+    },
+    "4_3": {
+      "class_id": 356,
+      "prob": 0.03419245406985283,
+      "top_3_channel_ids": [
+        21,
+        106,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/4_3_saliency.png"
+    },
+    "4_4": {
+      "class_id": 285,
+      "prob": 0.04329904168844223,
+      "top_3_channel_ids": [
+        21,
+        73,
+        0
+      ],
+      "saliency_url": "/api/precomputed/cat/4_4_saliency.png"
+    },
+    "4_5": {
+      "class_id": 750,
+      "prob": 0.5792739987373352,
+      "top_3_channel_ids": [
+        21,
+        117,
+        188
+      ],
+      "saliency_url": "/api/precomputed/cat/4_5_saliency.png"
+    },
+    "4_6": {
+      "class_id": 750,
+      "prob": 0.2054668515920639,
+      "top_3_channel_ids": [
+        21,
+        117,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/4_6_saliency.png"
+    },
+    "4_7": {
+      "class_id": 750,
+      "prob": 0.5616583824157715,
+      "top_3_channel_ids": [
+        117,
+        181,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/4_7_saliency.png"
+    },
+    "4_8": {
+      "class_id": 721,
+      "prob": 0.09938736259937286,
+      "top_3_channel_ids": [
+        21,
+        117,
+        28
+      ],
+      "saliency_url": "/api/precomputed/cat/4_8_saliency.png"
+    },
+    "4_9": {
+      "class_id": 750,
+      "prob": 0.1842426210641861,
+      "top_3_channel_ids": [
+        21,
+        130,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/4_9_saliency.png"
+    },
+    "4_10": {
+      "class_id": 285,
+      "prob": 0.14689409732818604,
+      "top_3_channel_ids": [
+        131,
+        92,
+        0
+      ],
+      "saliency_url": "/api/precomputed/cat/4_10_saliency.png"
+    },
+    "4_11": {
+      "class_id": 750,
+      "prob": 0.32235464453697205,
+      "top_3_channel_ids": [
+        21,
+        117,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/4_11_saliency.png"
+    },
+    "4_12": {
+      "class_id": 750,
+      "prob": 0.2795558273792267,
+      "top_3_channel_ids": [
+        21,
+        130,
+        16
+      ],
+      "saliency_url": "/api/precomputed/cat/4_12_saliency.png"
+    },
+    "4_13": {
+      "class_id": 785,
+      "prob": 0.28372782468795776,
+      "top_3_channel_ids": [
+        21,
+        2,
+        133
+      ],
+      "saliency_url": "/api/precomputed/cat/4_13_saliency.png"
+    },
+    "5_0": {
+      "class_id": 750,
+      "prob": 0.5550767779350281,
+      "top_3_channel_ids": [
+        21,
+        117,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/5_0_saliency.png"
+    },
+    "5_1": {
+      "class_id": 285,
+      "prob": 0.30051594972610474,
+      "top_3_channel_ids": [
+        21,
+        57,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/5_1_saliency.png"
+    },
+    "5_2": {
+      "class_id": 285,
+      "prob": 0.2737843990325928,
+      "top_3_channel_ids": [
+        21,
+        17,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/5_2_saliency.png"
+    },
+    "5_3": {
+      "class_id": 721,
+      "prob": 0.5752122402191162,
+      "top_3_channel_ids": [
+        21,
+        28,
+        161
+      ],
+      "saliency_url": "/api/precomputed/cat/5_3_saliency.png"
+    },
+    "5_4": {
+      "class_id": 750,
+      "prob": 0.6478792428970337,
+      "top_3_channel_ids": [
+        21,
+        117,
+        25
+      ],
+      "saliency_url": "/api/precomputed/cat/5_4_saliency.png"
+    },
+    "5_5": {
+      "class_id": 750,
+      "prob": 0.40257033705711365,
+      "top_3_channel_ids": [
+        21,
+        181,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/5_5_saliency.png"
+    },
+    "5_6": {
+      "class_id": 750,
+      "prob": 0.33194661140441895,
+      "top_3_channel_ids": [
+        21,
+        117,
+        173
+      ],
+      "saliency_url": "/api/precomputed/cat/5_6_saliency.png"
+    },
+    "5_7": {
+      "class_id": 750,
+      "prob": 0.048436131328344345,
+      "top_3_channel_ids": [
+        21,
+        51,
+        87
+      ],
+      "saliency_url": "/api/precomputed/cat/5_7_saliency.png"
+    },
+    "5_8": {
+      "class_id": 750,
+      "prob": 0.11343581974506378,
+      "top_3_channel_ids": [
+        21,
+        117,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/5_8_saliency.png"
+    },
+    "5_9": {
+      "class_id": 721,
+      "prob": 0.04945285618305206,
+      "top_3_channel_ids": [
+        21,
+        161,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/5_9_saliency.png"
+    },
+    "5_10": {
+      "class_id": 696,
+      "prob": 0.040348269045352936,
+      "top_3_channel_ids": [
+        21,
+        26,
+        71
+      ],
+      "saliency_url": "/api/precomputed/cat/5_10_saliency.png"
+    },
+    "5_11": {
+      "class_id": 151,
+      "prob": 0.04192871227860451,
+      "top_3_channel_ids": [
+        21,
+        131,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/5_11_saliency.png"
+    },
+    "5_12": {
+      "class_id": 171,
+      "prob": 0.09464379400014877,
+      "top_3_channel_ids": [
+        21,
+        75,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/5_12_saliency.png"
+    },
+    "5_13": {
+      "class_id": 171,
+      "prob": 0.07398957759141922,
+      "top_3_channel_ids": [
+        21,
+        133,
+        1
+      ],
+      "saliency_url": "/api/precomputed/cat/5_13_saliency.png"
+    },
+    "6_0": {
+      "class_id": 750,
+      "prob": 0.14774388074874878,
+      "top_3_channel_ids": [
+        21,
+        117,
+        98
+      ],
+      "saliency_url": "/api/precomputed/cat/6_0_saliency.png"
+    },
+    "6_1": {
+      "class_id": 171,
+      "prob": 0.047388989478349686,
+      "top_3_channel_ids": [
+        41,
+        1,
+        112
+      ],
+      "saliency_url": "/api/precomputed/cat/6_1_saliency.png"
+    },
+    "6_2": {
+      "class_id": 750,
+      "prob": 0.7681660652160645,
+      "top_3_channel_ids": [
+        21,
+        32,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/6_2_saliency.png"
+    },
+    "6_3": {
+      "class_id": 750,
+      "prob": 0.6695847511291504,
+      "top_3_channel_ids": [
+        21,
+        117,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/6_3_saliency.png"
+    },
+    "6_4": {
+      "class_id": 987,
+      "prob": 0.05070134997367859,
+      "top_3_channel_ids": [
+        21,
+        90,
+        151
+      ],
+      "saliency_url": "/api/precomputed/cat/6_4_saliency.png"
+    },
+    "6_5": {
+      "class_id": 516,
+      "prob": 0.12054859101772308,
+      "top_3_channel_ids": [
+        21,
+        147,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/6_5_saliency.png"
+    },
+    "6_6": {
+      "class_id": 750,
+      "prob": 0.28980961441993713,
+      "top_3_channel_ids": [
+        21,
+        59,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/6_6_saliency.png"
+    },
+    "6_7": {
+      "class_id": 440,
+      "prob": 0.046084947884082794,
+      "top_3_channel_ids": [
+        21,
+        88,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/6_7_saliency.png"
+    },
+    "6_8": {
+      "class_id": 171,
+      "prob": 0.12305862456560135,
+      "top_3_channel_ids": [
+        21,
+        38,
+        74
+      ],
+      "saliency_url": "/api/precomputed/cat/6_8_saliency.png"
+    },
+    "6_9": {
+      "class_id": 785,
+      "prob": 0.054013464599847794,
+      "top_3_channel_ids": [
+        21,
+        92,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/6_9_saliency.png"
+    },
+    "6_10": {
+      "class_id": 161,
+      "prob": 0.027871577069163322,
+      "top_3_channel_ids": [
+        21,
+        189,
+        59
+      ],
+      "saliency_url": "/api/precomputed/cat/6_10_saliency.png"
+    },
+    "6_11": {
+      "class_id": 987,
+      "prob": 0.09400206804275513,
+      "top_3_channel_ids": [
+        21,
+        162,
+        143
+      ],
+      "saliency_url": "/api/precomputed/cat/6_11_saliency.png"
+    },
+    "6_12": {
+      "class_id": 750,
+      "prob": 0.22820135951042175,
+      "top_3_channel_ids": [
+        21,
+        117,
+        51
+      ],
+      "saliency_url": "/api/precomputed/cat/6_12_saliency.png"
+    },
+    "6_13": {
+      "class_id": 151,
+      "prob": 0.13470253348350525,
+      "top_3_channel_ids": [
+        21,
+        131,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/6_13_saliency.png"
+    },
+    "7_0": {
+      "class_id": 785,
+      "prob": 0.4843485653400421,
+      "top_3_channel_ids": [
+        21,
+        2,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/7_0_saliency.png"
+    },
+    "7_1": {
+      "class_id": 998,
+      "prob": 0.1103070005774498,
+      "top_3_channel_ids": [
+        21,
+        38,
+        168
+      ],
+      "saliency_url": "/api/precomputed/cat/7_1_saliency.png"
+    },
+    "7_2": {
+      "class_id": 588,
+      "prob": 0.10116341710090637,
+      "top_3_channel_ids": [
+        38,
+        113,
+        144
+      ],
+      "saliency_url": "/api/precomputed/cat/7_2_saliency.png"
+    },
+    "7_3": {
+      "class_id": 516,
+      "prob": 0.10987886786460876,
+      "top_3_channel_ids": [
+        21,
+        22,
+        156
+      ],
+      "saliency_url": "/api/precomputed/cat/7_3_saliency.png"
+    },
+    "7_4": {
+      "class_id": 750,
+      "prob": 0.11677925288677216,
+      "top_3_channel_ids": [
+        21,
+        117,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/7_4_saliency.png"
+    },
+    "7_5": {
+      "class_id": 151,
+      "prob": 0.1205022931098938,
+      "top_3_channel_ids": [
+        131,
+        38,
+        5
+      ],
+      "saliency_url": "/api/precomputed/cat/7_5_saliency.png"
+    },
+    "7_6": {
+      "class_id": 285,
+      "prob": 0.30163195729255676,
+      "top_3_channel_ids": [
+        21,
+        117,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/7_6_saliency.png"
+    },
+    "7_7": {
+      "class_id": 750,
+      "prob": 0.3093758225440979,
+      "top_3_channel_ids": [
+        21,
+        117,
+        10
+      ],
+      "saliency_url": "/api/precomputed/cat/7_7_saliency.png"
+    },
+    "7_8": {
+      "class_id": 965,
+      "prob": 0.13742412626743317,
+      "top_3_channel_ids": [
+        21,
+        17,
+        129
+      ],
+      "saliency_url": "/api/precomputed/cat/7_8_saliency.png"
+    },
+    "7_9": {
+      "class_id": 171,
+      "prob": 0.23389756679534912,
+      "top_3_channel_ids": [
+        21,
+        120,
+        165
+      ],
+      "saliency_url": "/api/precomputed/cat/7_9_saliency.png"
+    },
+    "7_10": {
+      "class_id": 212,
+      "prob": 0.025276627391576767,
+      "top_3_channel_ids": [
+        21,
+        189,
+        30
+      ],
+      "saliency_url": "/api/precomputed/cat/7_10_saliency.png"
+    },
+    "7_11": {
+      "class_id": 619,
+      "prob": 0.03810210898518562,
+      "top_3_channel_ids": [
+        21,
+        13,
+        2
+      ],
+      "saliency_url": "/api/precomputed/cat/7_11_saliency.png"
+    },
+    "7_12": {
+      "class_id": 808,
+      "prob": 0.04838522896170616,
+      "top_3_channel_ids": [
+        38,
+        106,
+        42
+      ],
+      "saliency_url": "/api/precomputed/cat/7_12_saliency.png"
+    },
+    "7_13": {
+      "class_id": 171,
+      "prob": 0.05737849324941635,
+      "top_3_channel_ids": [
+        21,
+        112,
+        165
+      ],
+      "saliency_url": "/api/precomputed/cat/7_13_saliency.png"
+    },
+    "8_0": {
+      "class_id": 785,
+      "prob": 0.05753248929977417,
+      "top_3_channel_ids": [
+        21,
+        111,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/8_0_saliency.png"
+    },
+    "8_1": {
+      "class_id": 785,
+      "prob": 0.06561573594808578,
+      "top_3_channel_ids": [
+        21,
+        158,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/8_1_saliency.png"
+    },
+    "8_2": {
+      "class_id": 171,
+      "prob": 0.06712754815816879,
+      "top_3_channel_ids": [
+        21,
+        75,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/8_2_saliency.png"
+    },
+    "8_3": {
+      "class_id": 750,
+      "prob": 0.5760008692741394,
+      "top_3_channel_ids": [
+        21,
+        117,
+        52
+      ],
+      "saliency_url": "/api/precomputed/cat/8_3_saliency.png"
+    },
+    "8_4": {
+      "class_id": 750,
+      "prob": 0.2200748771429062,
+      "top_3_channel_ids": [
+        21,
+        117,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/8_4_saliency.png"
+    },
+    "8_5": {
+      "class_id": 750,
+      "prob": 0.28933990001678467,
+      "top_3_channel_ids": [
+        21,
+        117,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/8_5_saliency.png"
+    },
+    "8_6": {
+      "class_id": 750,
+      "prob": 0.40131911635398865,
+      "top_3_channel_ids": [
+        21,
+        98,
+        181
+      ],
+      "saliency_url": "/api/precomputed/cat/8_6_saliency.png"
+    },
+    "8_7": {
+      "class_id": 790,
+      "prob": 0.07690226286649704,
+      "top_3_channel_ids": [
+        21,
+        90,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/8_7_saliency.png"
+    },
+    "8_8": {
+      "class_id": 750,
+      "prob": 0.05999785289168358,
+      "top_3_channel_ids": [
+        21,
+        117,
+        77
+      ],
+      "saliency_url": "/api/precomputed/cat/8_8_saliency.png"
+    },
+    "8_9": {
+      "class_id": 203,
+      "prob": 0.26136043667793274,
+      "top_3_channel_ids": [
+        90,
+        131,
+        47
+      ],
+      "saliency_url": "/api/precomputed/cat/8_9_saliency.png"
+    },
+    "8_10": {
+      "class_id": 151,
+      "prob": 0.11845545470714569,
+      "top_3_channel_ids": [
+        21,
+        106,
+        162
+      ],
+      "saliency_url": "/api/precomputed/cat/8_10_saliency.png"
+    },
+    "8_11": {
+      "class_id": 415,
+      "prob": 0.08279339224100113,
+      "top_3_channel_ids": [
+        21,
+        88,
+        106
+      ],
+      "saliency_url": "/api/precomputed/cat/8_11_saliency.png"
+    },
+    "8_12": {
+      "class_id": 591,
+      "prob": 0.0802907645702362,
+      "top_3_channel_ids": [
+        21,
+        64,
+        22
+      ],
+      "saliency_url": "/api/precomputed/cat/8_12_saliency.png"
+    },
+    "8_13": {
+      "class_id": 785,
+      "prob": 0.05321532115340233,
+      "top_3_channel_ids": [
+        21,
+        130,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/8_13_saliency.png"
+    },
+    "9_0": {
+      "class_id": 785,
+      "prob": 0.08590515702962875,
+      "top_3_channel_ids": [
+        21,
+        133,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/9_0_saliency.png"
+    },
+    "9_1": {
+      "class_id": 151,
+      "prob": 0.32782742381095886,
+      "top_3_channel_ids": [
+        21,
+        131,
+        168
+      ],
+      "saliency_url": "/api/precomputed/cat/9_1_saliency.png"
+    },
+    "9_2": {
+      "class_id": 721,
+      "prob": 0.19009555876255035,
+      "top_3_channel_ids": [
+        21,
+        69,
+        160
+      ],
+      "saliency_url": "/api/precomputed/cat/9_2_saliency.png"
+    },
+    "9_3": {
+      "class_id": 285,
+      "prob": 0.19428540766239166,
+      "top_3_channel_ids": [
+        21,
+        10,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/9_3_saliency.png"
+    },
+    "9_4": {
+      "class_id": 753,
+      "prob": 0.04952934756875038,
+      "top_3_channel_ids": [
+        21,
+        33,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/9_4_saliency.png"
+    },
+    "9_5": {
+      "class_id": 171,
+      "prob": 0.13671015202999115,
+      "top_3_channel_ids": [
+        21,
+        71,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/9_5_saliency.png"
+    },
+    "9_6": {
+      "class_id": 417,
+      "prob": 0.1829279065132141,
+      "top_3_channel_ids": [
+        21,
+        158,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/9_6_saliency.png"
+    },
+    "9_7": {
+      "class_id": 750,
+      "prob": 0.26637864112854004,
+      "top_3_channel_ids": [
+        21,
+        90,
+        69
+      ],
+      "saliency_url": "/api/precomputed/cat/9_7_saliency.png"
+    },
+    "9_8": {
+      "class_id": 750,
+      "prob": 0.23273086547851562,
+      "top_3_channel_ids": [
+        21,
+        117,
+        109
+      ],
+      "saliency_url": "/api/precomputed/cat/9_8_saliency.png"
+    },
+    "9_9": {
+      "class_id": 171,
+      "prob": 0.3184734880924225,
+      "top_3_channel_ids": [
+        21,
+        1,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/9_9_saliency.png"
+    },
+    "9_10": {
+      "class_id": 171,
+      "prob": 0.04835255444049835,
+      "top_3_channel_ids": [
+        14,
+        157,
+        1
+      ],
+      "saliency_url": "/api/precomputed/cat/9_10_saliency.png"
+    },
+    "9_11": {
+      "class_id": 506,
+      "prob": 0.08859041333198547,
+      "top_3_channel_ids": [
+        15,
+        178,
+        97
+      ],
+      "saliency_url": "/api/precomputed/cat/9_11_saliency.png"
+    },
+    "9_12": {
+      "class_id": 619,
+      "prob": 0.06530474871397018,
+      "top_3_channel_ids": [
+        21,
+        47,
+        70
+      ],
+      "saliency_url": "/api/precomputed/cat/9_12_saliency.png"
+    },
+    "9_13": {
+      "class_id": 753,
+      "prob": 0.18312299251556396,
+      "top_3_channel_ids": [
+        21,
+        158,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/9_13_saliency.png"
+    },
+    "10_0": {
+      "class_id": 753,
+      "prob": 0.16066449880599976,
+      "top_3_channel_ids": [
+        87,
+        21,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/10_0_saliency.png"
+    },
+    "10_1": {
+      "class_id": 750,
+      "prob": 0.5614050626754761,
+      "top_3_channel_ids": [
+        21,
+        117,
+        163
+      ],
+      "saliency_url": "/api/precomputed/cat/10_1_saliency.png"
+    },
+    "10_2": {
+      "class_id": 750,
+      "prob": 0.3974647521972656,
+      "top_3_channel_ids": [
+        21,
+        109,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/10_2_saliency.png"
+    },
+    "10_3": {
+      "class_id": 285,
+      "prob": 0.29623016715049744,
+      "top_3_channel_ids": [
+        21,
+        160,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/10_3_saliency.png"
+    },
+    "10_4": {
+      "class_id": 721,
+      "prob": 0.0666428804397583,
+      "top_3_channel_ids": [
+        21,
+        161,
+        178
+      ],
+      "saliency_url": "/api/precomputed/cat/10_4_saliency.png"
+    },
+    "10_5": {
+      "class_id": 171,
+      "prob": 0.03945725038647652,
+      "top_3_channel_ids": [
+        21,
+        71,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/10_5_saliency.png"
+    },
+    "10_6": {
+      "class_id": 750,
+      "prob": 0.20315074920654297,
+      "top_3_channel_ids": [
+        21,
+        117,
+        160
+      ],
+      "saliency_url": "/api/precomputed/cat/10_6_saliency.png"
+    },
+    "10_7": {
+      "class_id": 750,
+      "prob": 0.316878080368042,
+      "top_3_channel_ids": [
+        21,
+        160,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/10_7_saliency.png"
+    },
+    "10_8": {
+      "class_id": 750,
+      "prob": 0.20641644299030304,
+      "top_3_channel_ids": [
+        21,
+        90,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/10_8_saliency.png"
+    },
+    "10_9": {
+      "class_id": 750,
+      "prob": 0.18382030725479126,
+      "top_3_channel_ids": [
+        21,
+        98,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/10_9_saliency.png"
+    },
+    "10_10": {
+      "class_id": 151,
+      "prob": 0.09468855708837509,
+      "top_3_channel_ids": [
+        21,
+        38,
+        131
+      ],
+      "saliency_url": "/api/precomputed/cat/10_10_saliency.png"
+    },
+    "10_11": {
+      "class_id": 171,
+      "prob": 0.07809088379144669,
+      "top_3_channel_ids": [
+        131,
+        157,
+        165
+      ],
+      "saliency_url": "/api/precomputed/cat/10_11_saliency.png"
+    },
+    "10_12": {
+      "class_id": 750,
+      "prob": 0.26564937829971313,
+      "top_3_channel_ids": [
+        21,
+        186,
+        117
+      ],
+      "saliency_url": "/api/precomputed/cat/10_12_saliency.png"
+    },
+    "10_13": {
+      "class_id": 750,
+      "prob": 0.48383939266204834,
+      "top_3_channel_ids": [
+        21,
+        15,
+        158
+      ],
+      "saliency_url": "/api/precomputed/cat/10_13_saliency.png"
+    },
+    "11_0": {
+      "class_id": 721,
+      "prob": 0.04022577032446861,
+      "top_3_channel_ids": [
+        2,
+        188,
+        78
+      ],
+      "saliency_url": "/api/precomputed/cat/11_0_saliency.png"
+    },
+    "11_1": {
+      "class_id": 285,
+      "prob": 0.17316965758800507,
+      "top_3_channel_ids": [
+        21,
+        117,
+        71
+      ],
+      "saliency_url": "/api/precomputed/cat/11_1_saliency.png"
+    },
+    "11_2": {
+      "class_id": 721,
+      "prob": 0.7168692946434021,
+      "top_3_channel_ids": [
+        21,
+        181,
+        28
+      ],
+      "saliency_url": "/api/precomputed/cat/11_2_saliency.png"
+    },
+    "11_3": {
+      "class_id": 171,
+      "prob": 0.11571275442838669,
+      "top_3_channel_ids": [
+        21,
+        14,
+        13
+      ],
+      "saliency_url": "/api/precomputed/cat/11_3_saliency.png"
+    },
+    "11_4": {
+      "class_id": 750,
+      "prob": 0.2091810703277588,
+      "top_3_channel_ids": [
+        21,
+        112,
+        161
+      ],
+      "saliency_url": "/api/precomputed/cat/11_4_saliency.png"
+    },
+    "11_5": {
+      "class_id": 750,
+      "prob": 0.07496662437915802,
+      "top_3_channel_ids": [
+        21,
+        117,
+        15
+      ],
+      "saliency_url": "/api/precomputed/cat/11_5_saliency.png"
+    },
+    "11_6": {
+      "class_id": 750,
+      "prob": 0.6627779603004456,
+      "top_3_channel_ids": [
+        21,
+        117,
+        59
+      ],
+      "saliency_url": "/api/precomputed/cat/11_6_saliency.png"
+    },
+    "11_7": {
+      "class_id": 282,
+      "prob": 0.05558842793107033,
+      "top_3_channel_ids": [
+        21,
+        92,
+        69
+      ],
+      "saliency_url": "/api/precomputed/cat/11_7_saliency.png"
+    },
+    "11_8": {
+      "class_id": 794,
+      "prob": 0.09390724450349808,
+      "top_3_channel_ids": [
+        129,
+        43,
+        21
+      ],
+      "saliency_url": "/api/precomputed/cat/11_8_saliency.png"
+    },
+    "11_9": {
+      "class_id": 750,
+      "prob": 0.7033335566520691,
+      "top_3_channel_ids": [
+        21,
+        117,
+        140
+      ],
+      "saliency_url": "/api/precomputed/cat/11_9_saliency.png"
+    },
+    "11_10": {
+      "class_id": 750,
+      "prob": 0.03775620833039284,
+      "top_3_channel_ids": [
+        21,
+        178,
+        32
+      ],
+      "saliency_url": "/api/precomputed/cat/11_10_saliency.png"
+    },
+    "11_11": {
+      "class_id": 750,
+      "prob": 0.4588634669780731,
+      "top_3_channel_ids": [
+        53,
+        21,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/11_11_saliency.png"
+    },
+    "11_12": {
+      "class_id": 285,
+      "prob": 0.1400831639766693,
+      "top_3_channel_ids": [
+        117,
+        188,
+        92
+      ],
+      "saliency_url": "/api/precomputed/cat/11_12_saliency.png"
+    },
+    "11_13": {
+      "class_id": 750,
+      "prob": 0.542798638343811,
+      "top_3_channel_ids": [
+        21,
+        117,
+        161
+      ],
+      "saliency_url": "/api/precomputed/cat/11_13_saliency.png"
+    },
+    "12_0": {
+      "class_id": 721,
+      "prob": 0.050049588084220886,
+      "top_3_channel_ids": [
+        21,
+        0,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/12_0_saliency.png"
+    },
+    "12_1": {
+      "class_id": 285,
+      "prob": 0.05796511843800545,
+      "top_3_channel_ids": [
+        117,
+        21,
+        71
+      ],
+      "saliency_url": "/api/precomputed/cat/12_1_saliency.png"
+    },
+    "12_2": {
+      "class_id": 721,
+      "prob": 0.30582141876220703,
+      "top_3_channel_ids": [
+        21,
+        78,
+        160
+      ],
+      "saliency_url": "/api/precomputed/cat/12_2_saliency.png"
+    },
+    "12_3": {
+      "class_id": 417,
+      "prob": 0.6290723085403442,
+      "top_3_channel_ids": [
+        21,
+        56,
+        178
+      ],
+      "saliency_url": "/api/precomputed/cat/12_3_saliency.png"
+    },
+    "12_4": {
+      "class_id": 750,
+      "prob": 0.7285584807395935,
+      "top_3_channel_ids": [
+        10,
+        117,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/12_4_saliency.png"
+    },
+    "12_5": {
+      "class_id": 750,
+      "prob": 0.06771831959486008,
+      "top_3_channel_ids": [
+        21,
+        117,
+        10
+      ],
+      "saliency_url": "/api/precomputed/cat/12_5_saliency.png"
+    },
+    "12_6": {
+      "class_id": 750,
+      "prob": 0.10527808219194412,
+      "top_3_channel_ids": [
+        21,
+        117,
+        59
+      ],
+      "saliency_url": "/api/precomputed/cat/12_6_saliency.png"
+    },
+    "12_7": {
+      "class_id": 905,
+      "prob": 0.022988153621554375,
+      "top_3_channel_ids": [
+        188,
+        21,
+        64
+      ],
+      "saliency_url": "/api/precomputed/cat/12_7_saliency.png"
+    },
+    "12_8": {
+      "class_id": 794,
+      "prob": 0.23216041922569275,
+      "top_3_channel_ids": [
+        21,
+        129,
+        37
+      ],
+      "saliency_url": "/api/precomputed/cat/12_8_saliency.png"
+    },
+    "12_9": {
+      "class_id": 750,
+      "prob": 0.21332217752933502,
+      "top_3_channel_ids": [
+        21,
+        117,
+        34
+      ],
+      "saliency_url": "/api/precomputed/cat/12_9_saliency.png"
+    },
+    "12_10": {
+      "class_id": 562,
+      "prob": 0.06170841306447983,
+      "top_3_channel_ids": [
+        21,
+        190,
+        37
+      ],
+      "saliency_url": "/api/precomputed/cat/12_10_saliency.png"
+    },
+    "12_11": {
+      "class_id": 905,
+      "prob": 0.08355943858623505,
+      "top_3_channel_ids": [
+        21,
+        153,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/12_11_saliency.png"
+    },
+    "12_12": {
+      "class_id": 750,
+      "prob": 0.2397339642047882,
+      "top_3_channel_ids": [
+        21,
+        160,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/12_12_saliency.png"
+    },
+    "12_13": {
+      "class_id": 296,
+      "prob": 0.10429177433252335,
+      "top_3_channel_ids": [
+        21,
+        41,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/12_13_saliency.png"
+    },
+    "13_0": {
+      "class_id": 721,
+      "prob": 0.0965861901640892,
+      "top_3_channel_ids": [
+        69,
+        38,
+        84
+      ],
+      "saliency_url": "/api/precomputed/cat/13_0_saliency.png"
+    },
+    "13_1": {
+      "class_id": 750,
+      "prob": 0.22421739995479584,
+      "top_3_channel_ids": [
+        21,
+        158,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/13_1_saliency.png"
+    },
+    "13_2": {
+      "class_id": 721,
+      "prob": 0.22594912350177765,
+      "top_3_channel_ids": [
+        21,
+        0,
+        181
+      ],
+      "saliency_url": "/api/precomputed/cat/13_2_saliency.png"
+    },
+    "13_3": {
+      "class_id": 721,
+      "prob": 0.0845826044678688,
+      "top_3_channel_ids": [
+        21,
+        13,
+        160
+      ],
+      "saliency_url": "/api/precomputed/cat/13_3_saliency.png"
+    },
+    "13_4": {
+      "class_id": 721,
+      "prob": 0.10589142143726349,
+      "top_3_channel_ids": [
+        21,
+        38,
+        69
+      ],
+      "saliency_url": "/api/precomputed/cat/13_4_saliency.png"
+    },
+    "13_5": {
+      "class_id": 790,
+      "prob": 0.1446341723203659,
+      "top_3_channel_ids": [
+        21,
+        93,
+        38
+      ],
+      "saliency_url": "/api/precomputed/cat/13_5_saliency.png"
+    },
+    "13_6": {
+      "class_id": 203,
+      "prob": 0.06384498625993729,
+      "top_3_channel_ids": [
+        178,
+        129,
+        90
+      ],
+      "saliency_url": "/api/precomputed/cat/13_6_saliency.png"
+    },
+    "13_7": {
+      "class_id": 753,
+      "prob": 0.1489907056093216,
+      "top_3_channel_ids": [
+        21,
+        129,
+        166
+      ],
+      "saliency_url": "/api/precomputed/cat/13_7_saliency.png"
+    },
+    "13_8": {
+      "class_id": 750,
+      "prob": 0.3607286512851715,
+      "top_3_channel_ids": [
+        53,
+        90,
+        16
+      ],
+      "saliency_url": "/api/precomputed/cat/13_8_saliency.png"
+    },
+    "13_9": {
+      "class_id": 905,
+      "prob": 0.0411592572927475,
+      "top_3_channel_ids": [
+        21,
+        10,
+        149
+      ],
+      "saliency_url": "/api/precomputed/cat/13_9_saliency.png"
+    },
+    "13_10": {
+      "class_id": 794,
+      "prob": 0.08291210234165192,
+      "top_3_channel_ids": [
+        21,
+        161,
+        37
+      ],
+      "saliency_url": "/api/precomputed/cat/13_10_saliency.png"
+    },
+    "13_11": {
+      "class_id": 794,
+      "prob": 0.04970737546682358,
+      "top_3_channel_ids": [
+        21,
+        161,
+        10
+      ],
+      "saliency_url": "/api/precomputed/cat/13_11_saliency.png"
+    },
+    "13_12": {
+      "class_id": 427,
+      "prob": 0.09777557849884033,
+      "top_3_channel_ids": [
+        21,
+        153,
+        86
+      ],
+      "saliency_url": "/api/precomputed/cat/13_12_saliency.png"
+    },
+    "13_13": {
+      "class_id": 427,
+      "prob": 0.07692082971334457,
+      "top_3_channel_ids": [
+        21,
+        153,
+        180
+      ],
+      "saliency_url": "/api/precomputed/cat/13_13_saliency.png"
+    }
+  }
+}

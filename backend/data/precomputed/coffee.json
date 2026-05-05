@@ -1,0 +1,1977 @@
+{
+  "image_id": "coffee",
+  "image_url": "/api/images/coffee.png",
+  "image_hash": "dcf709fe27f0abfe",
+  "original": {
+    "class_id": 967,
+    "prob": 32.079811096191406,
+    "top_3_channel_ids": [
+      21,
+      75,
+      121
+    ],
+    "saliency_url": "/api/precomputed/coffee/original_saliency.png"
+  },
+  "patches": {
+    "0_0": {
+      "class_id": 967,
+      "prob": 0.23027196526527405,
+      "top_3_channel_ids": [
+        21,
+        75,
+        142
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_0_saliency.png"
+    },
+    "0_1": {
+      "class_id": 809,
+      "prob": 0.1947828233242035,
+      "top_3_channel_ids": [
+        21,
+        188,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_1_saliency.png"
+    },
+    "0_2": {
+      "class_id": 967,
+      "prob": 0.19339655339717865,
+      "top_3_channel_ids": [
+        21,
+        54,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_2_saliency.png"
+    },
+    "0_3": {
+      "class_id": 967,
+      "prob": 0.3683246970176697,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_3_saliency.png"
+    },
+    "0_4": {
+      "class_id": 506,
+      "prob": 0.1421210616827011,
+      "top_3_channel_ids": [
+        21,
+        188,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_4_saliency.png"
+    },
+    "0_5": {
+      "class_id": 849,
+      "prob": 0.14771072566509247,
+      "top_3_channel_ids": [
+        21,
+        75,
+        45
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_5_saliency.png"
+    },
+    "0_6": {
+      "class_id": 659,
+      "prob": 0.1278611719608307,
+      "top_3_channel_ids": [
+        21,
+        46,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_6_saliency.png"
+    },
+    "0_7": {
+      "class_id": 739,
+      "prob": 0.095844566822052,
+      "top_3_channel_ids": [
+        21,
+        16,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_7_saliency.png"
+    },
+    "0_8": {
+      "class_id": 712,
+      "prob": 0.21888083219528198,
+      "top_3_channel_ids": [
+        21,
+        188,
+        71
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_8_saliency.png"
+    },
+    "0_9": {
+      "class_id": 659,
+      "prob": 0.26957371830940247,
+      "top_3_channel_ids": [
+        21,
+        87,
+        29
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_9_saliency.png"
+    },
+    "0_10": {
+      "class_id": 968,
+      "prob": 0.2883647680282593,
+      "top_3_channel_ids": [
+        21,
+        75,
+        78
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_10_saliency.png"
+    },
+    "0_11": {
+      "class_id": 506,
+      "prob": 0.17106002569198608,
+      "top_3_channel_ids": [
+        36,
+        62,
+        21
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_11_saliency.png"
+    },
+    "0_12": {
+      "class_id": 967,
+      "prob": 0.2591172158718109,
+      "top_3_channel_ids": [
+        21,
+        75,
+        121
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_12_saliency.png"
+    },
+    "0_13": {
+      "class_id": 659,
+      "prob": 0.3130092918872833,
+      "top_3_channel_ids": [
+        21,
+        78,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/0_13_saliency.png"
+    },
+    "1_0": {
+      "class_id": 968,
+      "prob": 0.23655271530151367,
+      "top_3_channel_ids": [
+        21,
+        75,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_0_saliency.png"
+    },
+    "1_1": {
+      "class_id": 967,
+      "prob": 0.37784814834594727,
+      "top_3_channel_ids": [
+        21,
+        2,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_1_saliency.png"
+    },
+    "1_2": {
+      "class_id": 506,
+      "prob": 0.4864868223667145,
+      "top_3_channel_ids": [
+        21,
+        36,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_2_saliency.png"
+    },
+    "1_3": {
+      "class_id": 967,
+      "prob": 0.1534237116575241,
+      "top_3_channel_ids": [
+        75,
+        21,
+        145
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_3_saliency.png"
+    },
+    "1_4": {
+      "class_id": 809,
+      "prob": 0.22353683412075043,
+      "top_3_channel_ids": [
+        21,
+        64,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_4_saliency.png"
+    },
+    "1_5": {
+      "class_id": 967,
+      "prob": 0.5703508257865906,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_5_saliency.png"
+    },
+    "1_6": {
+      "class_id": 968,
+      "prob": 0.17795832455158234,
+      "top_3_channel_ids": [
+        21,
+        75,
+        7
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_6_saliency.png"
+    },
+    "1_7": {
+      "class_id": 739,
+      "prob": 0.20398491621017456,
+      "top_3_channel_ids": [
+        21,
+        188,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_7_saliency.png"
+    },
+    "1_8": {
+      "class_id": 925,
+      "prob": 0.09926769882440567,
+      "top_3_channel_ids": [
+        21,
+        170,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_8_saliency.png"
+    },
+    "1_9": {
+      "class_id": 659,
+      "prob": 0.12351766228675842,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_9_saliency.png"
+    },
+    "1_10": {
+      "class_id": 967,
+      "prob": 0.2707308232784271,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_10_saliency.png"
+    },
+    "1_11": {
+      "class_id": 646,
+      "prob": 0.2052312046289444,
+      "top_3_channel_ids": [
+        21,
+        46,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_11_saliency.png"
+    },
+    "1_12": {
+      "class_id": 967,
+      "prob": 0.4665919840335846,
+      "top_3_channel_ids": [
+        21,
+        145,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_12_saliency.png"
+    },
+    "1_13": {
+      "class_id": 896,
+      "prob": 0.30015668272972107,
+      "top_3_channel_ids": [
+        21,
+        82,
+        56
+      ],
+      "saliency_url": "/api/precomputed/coffee/1_13_saliency.png"
+    },
+    "2_0": {
+      "class_id": 967,
+      "prob": 0.5798255801200867,
+      "top_3_channel_ids": [
+        21,
+        75,
+        97
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_0_saliency.png"
+    },
+    "2_1": {
+      "class_id": 506,
+      "prob": 0.2049596905708313,
+      "top_3_channel_ids": [
+        21,
+        36,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_1_saliency.png"
+    },
+    "2_2": {
+      "class_id": 646,
+      "prob": 0.5797097682952881,
+      "top_3_channel_ids": [
+        21,
+        46,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_2_saliency.png"
+    },
+    "2_3": {
+      "class_id": 646,
+      "prob": 0.49470534920692444,
+      "top_3_channel_ids": [
+        21,
+        34,
+        29
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_3_saliency.png"
+    },
+    "2_4": {
+      "class_id": 506,
+      "prob": 0.3262026309967041,
+      "top_3_channel_ids": [
+        21,
+        15,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_4_saliency.png"
+    },
+    "2_5": {
+      "class_id": 646,
+      "prob": 0.3240153193473816,
+      "top_3_channel_ids": [
+        21,
+        46,
+        184
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_5_saliency.png"
+    },
+    "2_6": {
+      "class_id": 967,
+      "prob": 0.37478262186050415,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_6_saliency.png"
+    },
+    "2_7": {
+      "class_id": 967,
+      "prob": 0.375011682510376,
+      "top_3_channel_ids": [
+        21,
+        185,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_7_saliency.png"
+    },
+    "2_8": {
+      "class_id": 967,
+      "prob": 0.5174206495285034,
+      "top_3_channel_ids": [
+        21,
+        2,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_8_saliency.png"
+    },
+    "2_9": {
+      "class_id": 967,
+      "prob": 0.5622462034225464,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_9_saliency.png"
+    },
+    "2_10": {
+      "class_id": 809,
+      "prob": 0.13037225604057312,
+      "top_3_channel_ids": [
+        21,
+        113,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_10_saliency.png"
+    },
+    "2_11": {
+      "class_id": 506,
+      "prob": 0.32576891779899597,
+      "top_3_channel_ids": [
+        21,
+        36,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_11_saliency.png"
+    },
+    "2_12": {
+      "class_id": 967,
+      "prob": 0.28873562812805176,
+      "top_3_channel_ids": [
+        21,
+        75,
+        181
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_12_saliency.png"
+    },
+    "2_13": {
+      "class_id": 896,
+      "prob": 0.14143595099449158,
+      "top_3_channel_ids": [
+        21,
+        82,
+        106
+      ],
+      "saliency_url": "/api/precomputed/coffee/2_13_saliency.png"
+    },
+    "3_0": {
+      "class_id": 506,
+      "prob": 0.152129128575325,
+      "top_3_channel_ids": [
+        21,
+        182,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_0_saliency.png"
+    },
+    "3_1": {
+      "class_id": 506,
+      "prob": 0.2792162597179413,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_1_saliency.png"
+    },
+    "3_2": {
+      "class_id": 646,
+      "prob": 0.1730843037366867,
+      "top_3_channel_ids": [
+        21,
+        34,
+        29
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_2_saliency.png"
+    },
+    "3_3": {
+      "class_id": 506,
+      "prob": 0.18303324282169342,
+      "top_3_channel_ids": [
+        21,
+        15,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_3_saliency.png"
+    },
+    "3_4": {
+      "class_id": 968,
+      "prob": 0.2911989986896515,
+      "top_3_channel_ids": [
+        21,
+        109,
+        148
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_4_saliency.png"
+    },
+    "3_5": {
+      "class_id": 739,
+      "prob": 0.28919142484664917,
+      "top_3_channel_ids": [
+        21,
+        47,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_5_saliency.png"
+    },
+    "3_6": {
+      "class_id": 659,
+      "prob": 0.28336504101753235,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_6_saliency.png"
+    },
+    "3_7": {
+      "class_id": 659,
+      "prob": 0.1621832251548767,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_7_saliency.png"
+    },
+    "3_8": {
+      "class_id": 739,
+      "prob": 0.17591699957847595,
+      "top_3_channel_ids": [
+        21,
+        75,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_8_saliency.png"
+    },
+    "3_9": {
+      "class_id": 967,
+      "prob": 0.26985764503479004,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_9_saliency.png"
+    },
+    "3_10": {
+      "class_id": 646,
+      "prob": 0.17639747262001038,
+      "top_3_channel_ids": [
+        21,
+        34,
+        175
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_10_saliency.png"
+    },
+    "3_11": {
+      "class_id": 968,
+      "prob": 0.14615385234355927,
+      "top_3_channel_ids": [
+        21,
+        75,
+        121
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_11_saliency.png"
+    },
+    "3_12": {
+      "class_id": 967,
+      "prob": 0.21107779443264008,
+      "top_3_channel_ids": [
+        21,
+        75,
+        97
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_12_saliency.png"
+    },
+    "3_13": {
+      "class_id": 739,
+      "prob": 0.17349322140216827,
+      "top_3_channel_ids": [
+        21,
+        75,
+        91
+      ],
+      "saliency_url": "/api/precomputed/coffee/3_13_saliency.png"
+    },
+    "4_0": {
+      "class_id": 506,
+      "prob": 0.16583244502544403,
+      "top_3_channel_ids": [
+        21,
+        36,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_0_saliency.png"
+    },
+    "4_1": {
+      "class_id": 506,
+      "prob": 0.3302469849586487,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_1_saliency.png"
+    },
+    "4_2": {
+      "class_id": 967,
+      "prob": 0.30536067485809326,
+      "top_3_channel_ids": [
+        21,
+        137,
+        148
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_2_saliency.png"
+    },
+    "4_3": {
+      "class_id": 739,
+      "prob": 0.3441985845565796,
+      "top_3_channel_ids": [
+        21,
+        62,
+        95
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_3_saliency.png"
+    },
+    "4_4": {
+      "class_id": 659,
+      "prob": 0.3179866075515747,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_4_saliency.png"
+    },
+    "4_5": {
+      "class_id": 659,
+      "prob": 0.10765991359949112,
+      "top_3_channel_ids": [
+        21,
+        46,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_5_saliency.png"
+    },
+    "4_6": {
+      "class_id": 659,
+      "prob": 0.48357057571411133,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_6_saliency.png"
+    },
+    "4_7": {
+      "class_id": 968,
+      "prob": 0.3251275420188904,
+      "top_3_channel_ids": [
+        21,
+        75,
+        19
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_7_saliency.png"
+    },
+    "4_8": {
+      "class_id": 659,
+      "prob": 0.12070608139038086,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_8_saliency.png"
+    },
+    "4_9": {
+      "class_id": 659,
+      "prob": 0.35522034764289856,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_9_saliency.png"
+    },
+    "4_10": {
+      "class_id": 739,
+      "prob": 0.27604538202285767,
+      "top_3_channel_ids": [
+        21,
+        47,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_10_saliency.png"
+    },
+    "4_11": {
+      "class_id": 646,
+      "prob": 0.5209411382675171,
+      "top_3_channel_ids": [
+        21,
+        47,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_11_saliency.png"
+    },
+    "4_12": {
+      "class_id": 506,
+      "prob": 0.1354289948940277,
+      "top_3_channel_ids": [
+        21,
+        62,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_12_saliency.png"
+    },
+    "4_13": {
+      "class_id": 659,
+      "prob": 0.1392032951116562,
+      "top_3_channel_ids": [
+        21,
+        87,
+        119
+      ],
+      "saliency_url": "/api/precomputed/coffee/4_13_saliency.png"
+    },
+    "5_0": {
+      "class_id": 646,
+      "prob": 0.5531759858131409,
+      "top_3_channel_ids": [
+        21,
+        34,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_0_saliency.png"
+    },
+    "5_1": {
+      "class_id": 967,
+      "prob": 0.16822399199008942,
+      "top_3_channel_ids": [
+        21,
+        128,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_1_saliency.png"
+    },
+    "5_2": {
+      "class_id": 646,
+      "prob": 0.2765272557735443,
+      "top_3_channel_ids": [
+        21,
+        47,
+        119
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_2_saliency.png"
+    },
+    "5_3": {
+      "class_id": 659,
+      "prob": 0.21901172399520874,
+      "top_3_channel_ids": [
+        46,
+        142,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_3_saliency.png"
+    },
+    "5_4": {
+      "class_id": 659,
+      "prob": 0.15974439680576324,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_4_saliency.png"
+    },
+    "5_5": {
+      "class_id": 968,
+      "prob": 0.256304532289505,
+      "top_3_channel_ids": [
+        21,
+        10,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_5_saliency.png"
+    },
+    "5_6": {
+      "class_id": 659,
+      "prob": 0.19928574562072754,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_6_saliency.png"
+    },
+    "5_7": {
+      "class_id": 659,
+      "prob": 0.31020283699035645,
+      "top_3_channel_ids": [
+        21,
+        87,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_7_saliency.png"
+    },
+    "5_8": {
+      "class_id": 659,
+      "prob": 0.3389962315559387,
+      "top_3_channel_ids": [
+        21,
+        35,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_8_saliency.png"
+    },
+    "5_9": {
+      "class_id": 659,
+      "prob": 0.19761061668395996,
+      "top_3_channel_ids": [
+        21,
+        87,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_9_saliency.png"
+    },
+    "5_10": {
+      "class_id": 659,
+      "prob": 0.19504480063915253,
+      "top_3_channel_ids": [
+        21,
+        87,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_10_saliency.png"
+    },
+    "5_11": {
+      "class_id": 646,
+      "prob": 0.7396675944328308,
+      "top_3_channel_ids": [
+        21,
+        47,
+        34
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_11_saliency.png"
+    },
+    "5_12": {
+      "class_id": 646,
+      "prob": 0.186512291431427,
+      "top_3_channel_ids": [
+        21,
+        20,
+        9
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_12_saliency.png"
+    },
+    "5_13": {
+      "class_id": 739,
+      "prob": 0.20556101202964783,
+      "top_3_channel_ids": [
+        21,
+        75,
+        95
+      ],
+      "saliency_url": "/api/precomputed/coffee/5_13_saliency.png"
+    },
+    "6_0": {
+      "class_id": 506,
+      "prob": 0.41906142234802246,
+      "top_3_channel_ids": [
+        21,
+        15,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_0_saliency.png"
+    },
+    "6_1": {
+      "class_id": 646,
+      "prob": 0.42804083228111267,
+      "top_3_channel_ids": [
+        21,
+        34,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_1_saliency.png"
+    },
+    "6_2": {
+      "class_id": 968,
+      "prob": 0.24798093736171722,
+      "top_3_channel_ids": [
+        21,
+        178,
+        78
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_2_saliency.png"
+    },
+    "6_3": {
+      "class_id": 506,
+      "prob": 0.1321064531803131,
+      "top_3_channel_ids": [
+        21,
+        188,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_3_saliency.png"
+    },
+    "6_4": {
+      "class_id": 659,
+      "prob": 0.22664129734039307,
+      "top_3_channel_ids": [
+        21,
+        46,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_4_saliency.png"
+    },
+    "6_5": {
+      "class_id": 659,
+      "prob": 0.1603255569934845,
+      "top_3_channel_ids": [
+        21,
+        46,
+        5
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_5_saliency.png"
+    },
+    "6_6": {
+      "class_id": 659,
+      "prob": 0.3194485008716583,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_6_saliency.png"
+    },
+    "6_7": {
+      "class_id": 659,
+      "prob": 0.38540685176849365,
+      "top_3_channel_ids": [
+        21,
+        15,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_7_saliency.png"
+    },
+    "6_8": {
+      "class_id": 659,
+      "prob": 0.31385549902915955,
+      "top_3_channel_ids": [
+        21,
+        15,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_8_saliency.png"
+    },
+    "6_9": {
+      "class_id": 659,
+      "prob": 0.33431869745254517,
+      "top_3_channel_ids": [
+        21,
+        90,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_9_saliency.png"
+    },
+    "6_10": {
+      "class_id": 968,
+      "prob": 0.18428722023963928,
+      "top_3_channel_ids": [
+        21,
+        183,
+        178
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_10_saliency.png"
+    },
+    "6_11": {
+      "class_id": 739,
+      "prob": 0.19145894050598145,
+      "top_3_channel_ids": [
+        75,
+        47,
+        188
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_11_saliency.png"
+    },
+    "6_12": {
+      "class_id": 646,
+      "prob": 0.7556681036949158,
+      "top_3_channel_ids": [
+        21,
+        188,
+        34
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_12_saliency.png"
+    },
+    "6_13": {
+      "class_id": 739,
+      "prob": 0.1401020735502243,
+      "top_3_channel_ids": [
+        21,
+        62,
+        143
+      ],
+      "saliency_url": "/api/precomputed/coffee/6_13_saliency.png"
+    },
+    "7_0": {
+      "class_id": 809,
+      "prob": 0.17633886635303497,
+      "top_3_channel_ids": [
+        21,
+        170,
+        113
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_0_saliency.png"
+    },
+    "7_1": {
+      "class_id": 646,
+      "prob": 0.15601098537445068,
+      "top_3_channel_ids": [
+        21,
+        47,
+        34
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_1_saliency.png"
+    },
+    "7_2": {
+      "class_id": 659,
+      "prob": 0.25692740082740784,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_2_saliency.png"
+    },
+    "7_3": {
+      "class_id": 861,
+      "prob": 0.18363142013549805,
+      "top_3_channel_ids": [
+        21,
+        188,
+        184
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_3_saliency.png"
+    },
+    "7_4": {
+      "class_id": 506,
+      "prob": 0.12793217599391937,
+      "top_3_channel_ids": [
+        21,
+        188,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_4_saliency.png"
+    },
+    "7_5": {
+      "class_id": 659,
+      "prob": 0.21395696699619293,
+      "top_3_channel_ids": [
+        21,
+        87,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_5_saliency.png"
+    },
+    "7_6": {
+      "class_id": 659,
+      "prob": 0.18635590374469757,
+      "top_3_channel_ids": [
+        21,
+        15,
+        78
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_6_saliency.png"
+    },
+    "7_7": {
+      "class_id": 659,
+      "prob": 0.234553262591362,
+      "top_3_channel_ids": [
+        78,
+        119,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_7_saliency.png"
+    },
+    "7_8": {
+      "class_id": 659,
+      "prob": 0.14661884307861328,
+      "top_3_channel_ids": [
+        21,
+        90,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_8_saliency.png"
+    },
+    "7_9": {
+      "class_id": 659,
+      "prob": 0.12557664513587952,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_9_saliency.png"
+    },
+    "7_10": {
+      "class_id": 967,
+      "prob": 0.33042410016059875,
+      "top_3_channel_ids": [
+        21,
+        185,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_10_saliency.png"
+    },
+    "7_11": {
+      "class_id": 659,
+      "prob": 0.4522203207015991,
+      "top_3_channel_ids": [
+        46,
+        142,
+        90
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_11_saliency.png"
+    },
+    "7_12": {
+      "class_id": 925,
+      "prob": 0.11487101018428802,
+      "top_3_channel_ids": [
+        21,
+        188,
+        118
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_12_saliency.png"
+    },
+    "7_13": {
+      "class_id": 968,
+      "prob": 0.22777749598026276,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/7_13_saliency.png"
+    },
+    "8_0": {
+      "class_id": 967,
+      "prob": 0.30609941482543945,
+      "top_3_channel_ids": [
+        170,
+        23,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_0_saliency.png"
+    },
+    "8_1": {
+      "class_id": 968,
+      "prob": 0.23985609412193298,
+      "top_3_channel_ids": [
+        21,
+        109,
+        178
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_1_saliency.png"
+    },
+    "8_2": {
+      "class_id": 659,
+      "prob": 0.2674340605735779,
+      "top_3_channel_ids": [
+        21,
+        188,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_2_saliency.png"
+    },
+    "8_3": {
+      "class_id": 968,
+      "prob": 0.1530594825744629,
+      "top_3_channel_ids": [
+        21,
+        183,
+        137
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_3_saliency.png"
+    },
+    "8_4": {
+      "class_id": 659,
+      "prob": 0.19860488176345825,
+      "top_3_channel_ids": [
+        21,
+        87,
+        90
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_4_saliency.png"
+    },
+    "8_5": {
+      "class_id": 968,
+      "prob": 0.15241031348705292,
+      "top_3_channel_ids": [
+        21,
+        75,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_5_saliency.png"
+    },
+    "8_6": {
+      "class_id": 646,
+      "prob": 0.17758171260356903,
+      "top_3_channel_ids": [
+        21,
+        34,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_6_saliency.png"
+    },
+    "8_7": {
+      "class_id": 646,
+      "prob": 0.2768534719944,
+      "top_3_channel_ids": [
+        21,
+        46,
+        34
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_7_saliency.png"
+    },
+    "8_8": {
+      "class_id": 659,
+      "prob": 0.08496324717998505,
+      "top_3_channel_ids": [
+        21,
+        46,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_8_saliency.png"
+    },
+    "8_9": {
+      "class_id": 968,
+      "prob": 0.1583436280488968,
+      "top_3_channel_ids": [
+        21,
+        41,
+        121
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_9_saliency.png"
+    },
+    "8_10": {
+      "class_id": 739,
+      "prob": 0.09699104726314545,
+      "top_3_channel_ids": [
+        21,
+        62,
+        85
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_10_saliency.png"
+    },
+    "8_11": {
+      "class_id": 968,
+      "prob": 0.2754298746585846,
+      "top_3_channel_ids": [
+        21,
+        15,
+        41
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_11_saliency.png"
+    },
+    "8_12": {
+      "class_id": 967,
+      "prob": 0.3569350838661194,
+      "top_3_channel_ids": [
+        21,
+        7,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_12_saliency.png"
+    },
+    "8_13": {
+      "class_id": 739,
+      "prob": 0.41125962138175964,
+      "top_3_channel_ids": [
+        21,
+        75,
+        143
+      ],
+      "saliency_url": "/api/precomputed/coffee/8_13_saliency.png"
+    },
+    "9_0": {
+      "class_id": 968,
+      "prob": 0.23178552091121674,
+      "top_3_channel_ids": [
+        21,
+        75,
+        78
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_0_saliency.png"
+    },
+    "9_1": {
+      "class_id": 738,
+      "prob": 0.09750722348690033,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_1_saliency.png"
+    },
+    "9_2": {
+      "class_id": 506,
+      "prob": 0.1491396576166153,
+      "top_3_channel_ids": [
+        188,
+        15,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_2_saliency.png"
+    },
+    "9_3": {
+      "class_id": 506,
+      "prob": 0.2423674315214157,
+      "top_3_channel_ids": [
+        21,
+        15,
+        188
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_3_saliency.png"
+    },
+    "9_4": {
+      "class_id": 968,
+      "prob": 0.22615064680576324,
+      "top_3_channel_ids": [
+        21,
+        15,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_4_saliency.png"
+    },
+    "9_5": {
+      "class_id": 967,
+      "prob": 0.178109809756279,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_5_saliency.png"
+    },
+    "9_6": {
+      "class_id": 967,
+      "prob": 0.345149964094162,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_6_saliency.png"
+    },
+    "9_7": {
+      "class_id": 967,
+      "prob": 0.33016884326934814,
+      "top_3_channel_ids": [
+        21,
+        177,
+        2
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_7_saliency.png"
+    },
+    "9_8": {
+      "class_id": 967,
+      "prob": 0.2451711893081665,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_8_saliency.png"
+    },
+    "9_9": {
+      "class_id": 968,
+      "prob": 0.20634840428829193,
+      "top_3_channel_ids": [
+        21,
+        15,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_9_saliency.png"
+    },
+    "9_10": {
+      "class_id": 739,
+      "prob": 0.11260698735713959,
+      "top_3_channel_ids": [
+        21,
+        75,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_10_saliency.png"
+    },
+    "9_11": {
+      "class_id": 506,
+      "prob": 0.11644192039966583,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_11_saliency.png"
+    },
+    "9_12": {
+      "class_id": 967,
+      "prob": 0.3278944492340088,
+      "top_3_channel_ids": [
+        21,
+        75,
+        7
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_12_saliency.png"
+    },
+    "9_13": {
+      "class_id": 739,
+      "prob": 0.2979415953159332,
+      "top_3_channel_ids": [
+        21,
+        143,
+        17
+      ],
+      "saliency_url": "/api/precomputed/coffee/9_13_saliency.png"
+    },
+    "10_0": {
+      "class_id": 967,
+      "prob": 0.2642713189125061,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_0_saliency.png"
+    },
+    "10_1": {
+      "class_id": 506,
+      "prob": 0.13067936897277832,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_1_saliency.png"
+    },
+    "10_2": {
+      "class_id": 967,
+      "prob": 0.07978509366512299,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_2_saliency.png"
+    },
+    "10_3": {
+      "class_id": 506,
+      "prob": 0.17087581753730774,
+      "top_3_channel_ids": [
+        21,
+        188,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_3_saliency.png"
+    },
+    "10_4": {
+      "class_id": 659,
+      "prob": 0.25442689657211304,
+      "top_3_channel_ids": [
+        21,
+        15,
+        188
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_4_saliency.png"
+    },
+    "10_5": {
+      "class_id": 659,
+      "prob": 0.28598806262016296,
+      "top_3_channel_ids": [
+        21,
+        87,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_5_saliency.png"
+    },
+    "10_6": {
+      "class_id": 967,
+      "prob": 0.15394967794418335,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_6_saliency.png"
+    },
+    "10_7": {
+      "class_id": 968,
+      "prob": 0.21088075637817383,
+      "top_3_channel_ids": [
+        21,
+        15,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_7_saliency.png"
+    },
+    "10_8": {
+      "class_id": 968,
+      "prob": 0.3641809821128845,
+      "top_3_channel_ids": [
+        21,
+        137,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_8_saliency.png"
+    },
+    "10_9": {
+      "class_id": 968,
+      "prob": 0.1468847692012787,
+      "top_3_channel_ids": [
+        21,
+        15,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_9_saliency.png"
+    },
+    "10_10": {
+      "class_id": 739,
+      "prob": 0.11037888377904892,
+      "top_3_channel_ids": [
+        62,
+        21,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_10_saliency.png"
+    },
+    "10_11": {
+      "class_id": 967,
+      "prob": 0.21874426305294037,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_11_saliency.png"
+    },
+    "10_12": {
+      "class_id": 646,
+      "prob": 0.20496216416358948,
+      "top_3_channel_ids": [
+        21,
+        34,
+        47
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_12_saliency.png"
+    },
+    "10_13": {
+      "class_id": 739,
+      "prob": 0.25773268938064575,
+      "top_3_channel_ids": [
+        21,
+        75,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/10_13_saliency.png"
+    },
+    "11_0": {
+      "class_id": 967,
+      "prob": 0.4433371424674988,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_0_saliency.png"
+    },
+    "11_1": {
+      "class_id": 659,
+      "prob": 0.3663032352924347,
+      "top_3_channel_ids": [
+        21,
+        87,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_1_saliency.png"
+    },
+    "11_2": {
+      "class_id": 967,
+      "prob": 0.6283012628555298,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_2_saliency.png"
+    },
+    "11_3": {
+      "class_id": 659,
+      "prob": 0.0897064059972763,
+      "top_3_channel_ids": [
+        21,
+        87,
+        19
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_3_saliency.png"
+    },
+    "11_4": {
+      "class_id": 739,
+      "prob": 0.11607545614242554,
+      "top_3_channel_ids": [
+        21,
+        75,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_4_saliency.png"
+    },
+    "11_5": {
+      "class_id": 659,
+      "prob": 0.21108508110046387,
+      "top_3_channel_ids": [
+        21,
+        15,
+        87
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_5_saliency.png"
+    },
+    "11_6": {
+      "class_id": 659,
+      "prob": 0.15084601938724518,
+      "top_3_channel_ids": [
+        21,
+        188,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_6_saliency.png"
+    },
+    "11_7": {
+      "class_id": 659,
+      "prob": 0.2228088080883026,
+      "top_3_channel_ids": [
+        21,
+        188,
+        46
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_7_saliency.png"
+    },
+    "11_8": {
+      "class_id": 659,
+      "prob": 0.23377028107643127,
+      "top_3_channel_ids": [
+        21,
+        87,
+        177
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_8_saliency.png"
+    },
+    "11_9": {
+      "class_id": 739,
+      "prob": 0.19919240474700928,
+      "top_3_channel_ids": [
+        21,
+        95,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_9_saliency.png"
+    },
+    "11_10": {
+      "class_id": 968,
+      "prob": 0.16194218397140503,
+      "top_3_channel_ids": [
+        21,
+        75,
+        121
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_10_saliency.png"
+    },
+    "11_11": {
+      "class_id": 967,
+      "prob": 0.24234025180339813,
+      "top_3_channel_ids": [
+        21,
+        178,
+        121
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_11_saliency.png"
+    },
+    "11_12": {
+      "class_id": 646,
+      "prob": 0.40944117307662964,
+      "top_3_channel_ids": [
+        21,
+        184,
+        30
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_12_saliency.png"
+    },
+    "11_13": {
+      "class_id": 967,
+      "prob": 0.1267455667257309,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/11_13_saliency.png"
+    },
+    "12_0": {
+      "class_id": 967,
+      "prob": 0.5058480501174927,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_0_saliency.png"
+    },
+    "12_1": {
+      "class_id": 646,
+      "prob": 0.22242482006549835,
+      "top_3_channel_ids": [
+        21,
+        34,
+        184
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_1_saliency.png"
+    },
+    "12_2": {
+      "class_id": 646,
+      "prob": 0.19800670444965363,
+      "top_3_channel_ids": [
+        21,
+        46,
+        186
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_2_saliency.png"
+    },
+    "12_3": {
+      "class_id": 646,
+      "prob": 0.34947967529296875,
+      "top_3_channel_ids": [
+        21,
+        188,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_3_saliency.png"
+    },
+    "12_4": {
+      "class_id": 809,
+      "prob": 0.12435341626405716,
+      "top_3_channel_ids": [
+        21,
+        113,
+        97
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_4_saliency.png"
+    },
+    "12_5": {
+      "class_id": 739,
+      "prob": 0.3867953419685364,
+      "top_3_channel_ids": [
+        21,
+        75,
+        95
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_5_saliency.png"
+    },
+    "12_6": {
+      "class_id": 739,
+      "prob": 0.4041074216365814,
+      "top_3_channel_ids": [
+        95,
+        75,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_6_saliency.png"
+    },
+    "12_7": {
+      "class_id": 739,
+      "prob": 0.597068190574646,
+      "top_3_channel_ids": [
+        21,
+        75,
+        188
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_7_saliency.png"
+    },
+    "12_8": {
+      "class_id": 968,
+      "prob": 0.09243202209472656,
+      "top_3_channel_ids": [
+        21,
+        78,
+        178
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_8_saliency.png"
+    },
+    "12_9": {
+      "class_id": 506,
+      "prob": 0.12064096331596375,
+      "top_3_channel_ids": [
+        21,
+        36,
+        72
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_9_saliency.png"
+    },
+    "12_10": {
+      "class_id": 968,
+      "prob": 0.226774200797081,
+      "top_3_channel_ids": [
+        21,
+        75,
+        109
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_10_saliency.png"
+    },
+    "12_11": {
+      "class_id": 968,
+      "prob": 0.2625640332698822,
+      "top_3_channel_ids": [
+        21,
+        109,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_11_saliency.png"
+    },
+    "12_12": {
+      "class_id": 646,
+      "prob": 0.20510390400886536,
+      "top_3_channel_ids": [
+        21,
+        34,
+        66
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_12_saliency.png"
+    },
+    "12_13": {
+      "class_id": 659,
+      "prob": 0.6429299712181091,
+      "top_3_channel_ids": [
+        21,
+        46,
+        84
+      ],
+      "saliency_url": "/api/precomputed/coffee/12_13_saliency.png"
+    },
+    "13_0": {
+      "class_id": 659,
+      "prob": 0.24012084305286407,
+      "top_3_channel_ids": [
+        21,
+        87,
+        84
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_0_saliency.png"
+    },
+    "13_1": {
+      "class_id": 506,
+      "prob": 0.37303686141967773,
+      "top_3_channel_ids": [
+        21,
+        36,
+        62
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_1_saliency.png"
+    },
+    "13_2": {
+      "class_id": 967,
+      "prob": 0.16594819724559784,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_2_saliency.png"
+    },
+    "13_3": {
+      "class_id": 967,
+      "prob": 0.4757806062698364,
+      "top_3_channel_ids": [
+        21,
+        75,
+        76
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_3_saliency.png"
+    },
+    "13_4": {
+      "class_id": 646,
+      "prob": 0.16222864389419556,
+      "top_3_channel_ids": [
+        21,
+        119,
+        184
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_4_saliency.png"
+    },
+    "13_5": {
+      "class_id": 967,
+      "prob": 0.16155458986759186,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_5_saliency.png"
+    },
+    "13_6": {
+      "class_id": 947,
+      "prob": 0.16745825111865997,
+      "top_3_channel_ids": [
+        21,
+        166,
+        82
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_6_saliency.png"
+    },
+    "13_7": {
+      "class_id": 659,
+      "prob": 0.2774898111820221,
+      "top_3_channel_ids": [
+        21,
+        19,
+        35
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_7_saliency.png"
+    },
+    "13_8": {
+      "class_id": 506,
+      "prob": 0.1551876962184906,
+      "top_3_channel_ids": [
+        21,
+        36,
+        15
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_8_saliency.png"
+    },
+    "13_9": {
+      "class_id": 967,
+      "prob": 0.16363860666751862,
+      "top_3_channel_ids": [
+        21,
+        75,
+        100
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_9_saliency.png"
+    },
+    "13_10": {
+      "class_id": 967,
+      "prob": 0.2798498868942261,
+      "top_3_channel_ids": [
+        21,
+        170,
+        75
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_10_saliency.png"
+    },
+    "13_11": {
+      "class_id": 968,
+      "prob": 0.24898838996887207,
+      "top_3_channel_ids": [
+        21,
+        75,
+        170
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_11_saliency.png"
+    },
+    "13_12": {
+      "class_id": 646,
+      "prob": 0.23532535135746002,
+      "top_3_channel_ids": [
+        21,
+        20,
+        36
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_12_saliency.png"
+    },
+    "13_13": {
+      "class_id": 659,
+      "prob": 0.444533109664917,
+      "top_3_channel_ids": [
+        21,
+        19,
+        84
+      ],
+      "saliency_url": "/api/precomputed/coffee/13_13_saliency.png"
+    }
+  }
+}
