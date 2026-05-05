@@ -15,7 +15,7 @@ export interface ManifestImageView {
   original_class_id: number
   original_class_name: string
   original_top_3_channel_ids: number[]
-  original_saliency_display_url: string
+  original_saliency_url: string
 }
 
 export interface ManifestResponse {

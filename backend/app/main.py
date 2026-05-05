@@ -14,16 +14,24 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from . import precomputed_loader, storage
+from . import class_labels, precomputed_loader, storage
 from .routes.manifest import router as manifest_router
 from .routes.morph_ws import router as morph_router
 
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI) -> AsyncIterator[None]:
-    # one-time: load all precomputed JSONs into memory. fails loudly if
-    # anything is missing or malformed.
+    # one-time: load labels first (the precomputed loader uses them to
+    # resolve class_ids → class_names), then load precomputed JSONs.
+    # both fail loudly if anything is missing or malformed.
+    class_labels.load()
     precomputed_loader.load_all()
+
+    # # IF RELOADING DATA: wipe runtime cache on every restart so stale renderings can't survive
+    # import shutil
+    # shutil.rmtree(storage.TMP_ROOT, ignore_errors=True)
+    # storage.ensure_tmp_root()
+    
     yield
 
 

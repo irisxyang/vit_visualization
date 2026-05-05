@@ -60,6 +60,15 @@ export class DwellDetector {
     return this.status
   }
 
+  /**
+   * Update the dwell threshold. Affects subsequent patch entries.
+   * If a patch is currently being scanned, its in-flight timer is
+   * NOT updated — the next `enter` event picks up the new value.
+   */
+  setDwellMs(ms: number): void {
+    this.dwellMs = Math.max(50, ms)
+  }
+
   destroy(): void {
     this.cancelTimer()
   }

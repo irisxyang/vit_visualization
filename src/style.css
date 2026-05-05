@@ -2,7 +2,7 @@
   --bg: #000000;
   --fg: #ffffff;
   --fg-muted: #c2c2c2;
-  --fg-dim: #6e6e6e;
+  --fg-dim: #343434;
   --accent: #3b9eff;
   --warn: #ff4d4d;
   --tile-bg: #d4d4d4;
@@ -79,7 +79,7 @@ body {
   height: 100%;
   max-height: 100%;
   max-width: 100%;
-  border: var(--border) solid var(--accent);
+  border: var(--border) solid var(--fg-dim);
   background: var(--tile-bg);
   overflow: hidden;
 }
@@ -241,7 +241,7 @@ body {
 }
 
 .header-thumb .thumb-caption {
-  color: var(--warn);
+  color: var(--fg-muted);
   font-size: 11px;
   line-height: 1.35;
 }
@@ -282,7 +282,7 @@ body {
 }
 
 .section-label .placeholder {
-  color: var(--fg-dim);
+  color: var(--fg-accent);
 }
 
 .attending {
@@ -354,4 +354,71 @@ body {
 .saliency-label {
   color: var(--fg);
   font-size: 12px;
+}
+
+/* ============================================================
+   settings (sliders for dwell time + morph time constant)
+   ============================================================ */
+
+.settings {
+  margin-top: 12px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.setting-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.setting-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.setting-value {
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+}
+
+/* range slider — dark, minimal, monospace-aesthetic */
+
+.setting-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.setting-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 100ms ease;
+}
+
+.setting-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.setting-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }

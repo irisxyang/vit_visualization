@@ -7,10 +7,16 @@ import { DwellProgressBar } from './canvas/DwellProgressBar'
 import { BackendClient } from './api/BackendClient'
 import { AppState } from './state/AppState'
 import { ImagePicker } from './picker/ImagePicker'
+import { SettingsControls } from './panel/SettingsControls'
 import type { ManifestImageView } from './api/types'
 
 const app = document.getElementById('app')
 if (!app) throw new Error('main: #app root element missing')
+
+// --- defaults (also the values SettingsControls boots with) ---
+
+const DEFAULT_DWELL_MS = 3000
+const DEFAULT_MORPH_TAU_S = 0.35
 
 // --- left side: canvas section (canvas-row + thumbnails below) ---
 
@@ -30,8 +36,7 @@ canvasFrame.appendChild(morphCanvas.element)
 
 const panel = new RightPanel()
 
-const DWELL_MS = 3000
-const dwellBar = new DwellProgressBar(DWELL_MS)
+const dwellBar = new DwellProgressBar(DEFAULT_DWELL_MS)
 canvasFrame.appendChild(dwellBar.element)
 
 // --- backend ---
@@ -46,7 +51,7 @@ const backend = new BackendClient({
 // --- input pipeline ---
 
 const dwellDetector = new DwellDetector({
-  dwellMs: DWELL_MS,
+  dwellMs: DEFAULT_DWELL_MS,
   onDwellFired: (patch) => state.onDwellFired(patch),
   onStatusChange: (status) => {
     state.setGazeStatus(status)
@@ -83,6 +88,21 @@ canvasRow.appendChild(picker.leftButton)
 canvasRow.appendChild(picker.rightButton)
 // thumbnails go below canvas-row, inside canvas-section
 canvasSection.appendChild(picker.thumbnails)
+
+// --- settings widget (mounted at bottom of right panel) ---
+
+const settings = new SettingsControls({
+  defaults: {
+    dwellMs: DEFAULT_DWELL_MS,
+    morphTimeConstantS: DEFAULT_MORPH_TAU_S,
+  },
+  onChange: (vals) => {
+    dwellDetector.setDwellMs(vals.dwellMs)
+    dwellBar.setDwellMs(vals.dwellMs)
+    morphCanvas.setTimeConstant(vals.morphTimeConstantS)
+  },
+})
+panel.prependSection(settings.element)
 
 // --- assemble ---
 

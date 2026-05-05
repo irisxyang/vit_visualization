@@ -54,6 +54,10 @@ export class AppState {
   private inFlightRequestIds: Set<string> = new Set()
 
   private revertTimer: number | null = null
+  /** Fires AFTER the visual morph back to original should be done.
+   *  Forcibly rewrites all GPU textures with the original to wipe any
+   *  residual content that the chase couldn't fully clear. */
+  private hardSnapTimer: number | null = null
   private gazeStatus: GazeStatus = { kind: 'off_canvas' }
 
   constructor(
@@ -109,7 +113,7 @@ export class AppState {
       channelIds: entry.original_top_3_channel_ids as [number, number, number],
     }
     this.panel.setOriginalClassification(original)
-    this.panel.setOriginalSaliencyUrl(entry.original_saliency_display_url)
+    this.panel.setOriginalSaliencyUrl(entry.original_saliency_url)
 
     // ---- clear "new" section; will fill in once user dwells ----
     this.panel.setNewClassification(null)
@@ -189,9 +193,23 @@ export class AppState {
     this.clearRevertTimer()
     this.revertTimer = window.setTimeout(() => {
       this.revertTimer = null
-      if (this.originalBitmap && this.gazeStatus.kind === 'off_canvas') {
-        this.canvas.setTarget(this.originalBitmap)
-      }
+      if (!this.originalBitmap || this.gazeStatus.kind !== 'off_canvas') return
+      this.canvas.setTarget(this.originalBitmap)
+
+      // Belt-and-suspenders: even with the shader's snap-on-converge,
+      // residual content can persist (PNG resampling differences,
+      // GPU rounding, etc.). After the visual morph should be
+      // complete (~5τ ≈ "fully settled"), force-rewrite all three
+      // GPU textures to the original. This is invisible if the chase
+      // already converged, and cleans up otherwise.
+      const tau = this.canvas.getTimeConstant()
+      const settleMs = Math.ceil(tau * 3 * 1000)
+      this.hardSnapTimer = window.setTimeout(() => {
+        this.hardSnapTimer = null
+        if (this.originalBitmap && this.gazeStatus.kind === 'off_canvas') {
+          this.canvas.setImage(this.originalBitmap)
+        }
+      }, settleMs)
     }, REVERT_DELAY_MS)
   }
 
@@ -199,6 +217,10 @@ export class AppState {
     if (this.revertTimer !== null) {
       window.clearTimeout(this.revertTimer)
       this.revertTimer = null
+    }
+    if (this.hardSnapTimer !== null) {
+      window.clearTimeout(this.hardSnapTimer)
+      this.hardSnapTimer = null
     }
   }
 

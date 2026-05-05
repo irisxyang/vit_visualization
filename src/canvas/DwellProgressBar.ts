@@ -46,6 +46,14 @@ export class DwellProgressBar {
     }
   }
 
+  /**
+   * Update the dwell threshold. The fill animation reads dwellMs each
+   * frame, so an in-progress fill rescales smoothly to the new total.
+   */
+  setDwellMs(ms: number): void {
+    this.dwellMs = Math.max(50, ms)
+  }
+
   destroy(): void {
     this.stopLoop()
   }

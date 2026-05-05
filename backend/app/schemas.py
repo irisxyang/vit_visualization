@@ -37,7 +37,7 @@ class ManifestImageView(BaseModel):
     original_class_id: int
     original_class_name: str
     original_top_3_channel_ids: list[int]
-    original_saliency_display_url: str
+    original_saliency_url: str  # runtime-rendered colormapped+blended PNG
 
 
 class ManifestResponse(BaseModel):

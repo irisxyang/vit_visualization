@@ -53,11 +53,11 @@ def source_image_path(image_id: str) -> Path:
 
 
 def saliency_raw_path(image_id: str, row: int, col: int) -> Path:
-    return DATA_ROOT / "precomputed" / image_id / f"{row}_{col}_saliency_raw.png"
+    return DATA_ROOT / "precomputed" / image_id / f"{row}_{col}_saliency.png"
 
 
 def channel_image_path(channel_id: int) -> Path:
-    return DATA_ROOT / "channels" / f"{channel_id}.png"
+    return DATA_ROOT / "channels" / f"block11_ch{channel_id}.png"
 
 
 # ---------- runtime tmp paths ----------
@@ -83,3 +83,17 @@ def merged_url(image_id: str, row: int, col: int) -> str:
 
 def source_image_url(image_id: str) -> str:
     return f"{URL_PREFIX}/images/{image_id}.png"
+
+
+# ---------- URL → disk path resolution ----------
+#
+# The precomputed JSONs reference saliency PNGs by URL (since the
+# frontend uses the same fields verbatim). To open them on the backend
+# we need to map "/api/precomputed/<id>/<file>" back to a disk path.
+
+def resolve_precomputed_url(url: str) -> Path:
+    """Map a /api/precomputed/... URL to its on-disk path under DATA_ROOT."""
+    rel = url.removeprefix(f"{URL_PREFIX}/precomputed/")
+    if rel == url:  # nothing was stripped → unexpected URL shape
+        raise ValueError(f"not a precomputed URL: {url!r}")
+    return DATA_ROOT / "precomputed" / rel

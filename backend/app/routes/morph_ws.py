@@ -22,6 +22,7 @@ from pydantic import TypeAdapter, ValidationError
 
 from .. import precomputed_loader, storage
 from ..pipeline.blending import render_merged
+from ..pipeline import saliency_display
 from ..schemas import (
     CancelMessage,
     ClientMessage,
@@ -82,13 +83,21 @@ async def _handle_request(
 
     async def worker() -> None:
         try:
-            # blending is CPU-bound; run off the event loop
+            # both render fns are CPU-bound and disk-cached; off the event loop
             await asyncio.to_thread(
                 render_merged,
                 msg.image_id,
                 msg.patch.row,
                 msg.patch.col,
                 patch_data,
+            )
+            sal_key = f"{msg.patch.row}_{msg.patch.col}"
+            sal_raw_path = storage.resolve_precomputed_url(patch_data.saliency_url)
+            await asyncio.to_thread(
+                saliency_display.render,
+                msg.image_id,
+                sal_key,
+                sal_raw_path,
             )
 
             result = ResultMessage(
@@ -98,7 +107,7 @@ async def _handle_request(
                 new_class_id=patch_data.class_id,
                 new_class_name=patch_data.class_name,
                 top_3_channel_ids=list(patch_data.top_3_channel_ids),
-                saliency_url=patch_data.saliency_display_url,
+                saliency_url=saliency_display.display_url(msg.image_id, sal_key),
                 merged_image_url=storage.merged_url(msg.image_id, msg.patch.row, msg.patch.col),
             )
             await ws.send_json(result.model_dump())

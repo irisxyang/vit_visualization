@@ -23,7 +23,7 @@ from .composite import composite
 # the three blend modes used for the three rep-max overlays. order
 # matches the ranked channels (most-activated channel uses the first
 # mode). swap freely.
-DEFAULT_BLEND_MODES = ["normal", "hard_light", "overlay"]
+DEFAULT_BLEND_MODES = ["hard_light", "hard_light", "hard_light"]
 
 
 def render_merged(
@@ -50,16 +50,12 @@ def render_merged(
 
     # ---- load inputs ----
     src_path = storage.source_image_path(image_id)
-    # patch.saliency_raw_url is "/api/precomputed/dog/5_8_saliency_raw.png".
-    # the static mount serves /precomputed/* from data/precomputed/, so
-    # strip "/api/precomputed/" and resolve under DATA_ROOT/precomputed/.
-    sal_rel = patch.saliency_raw_url.removeprefix(storage.URL_PREFIX + "/precomputed/")
-    sal_abs = storage.DATA_ROOT / "precomputed" / sal_rel
+    sal_abs = storage.resolve_precomputed_url(patch.saliency_url)
 
     if not src_path.exists():
         raise FileNotFoundError(f"source image missing: {src_path}")
     if not sal_abs.exists():
-        raise FileNotFoundError(f"saliency raw missing: {sal_abs}")
+        raise FileNotFoundError(f"saliency missing: {sal_abs}")
 
     source = Image.open(src_path).convert("RGB")
 

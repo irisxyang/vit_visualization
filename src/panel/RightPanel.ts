@@ -72,6 +72,16 @@ export class RightPanel {
     return this.root
   }
 
+  /** Append an externally-built section (e.g. SettingsControls) to the panel. */
+  appendSection(el: HTMLElement): void {
+    this.root.appendChild(el)
+  }
+
+  /** Insert an externally-built section at the top of the panel. */
+  prependSection(el: HTMLElement): void {
+    this.root.insertBefore(el, this.root.firstChild)
+  }
+
   // ----- public setters -----
 
   setHeaderThumb(bitmap: ImageBitmap): void {
@@ -101,7 +111,7 @@ export class RightPanel {
     this.origClassEl.textContent = `${view.classId} (${view.className})`
     view.channelIds.forEach((id, i) => {
       this.origChannelsEls[i].textContent = String(id)
-      this.origChannelImgs[i].style.backgroundImage = `url('/api/channels/${id}.png')`
+      this.origChannelImgs[i].style.backgroundImage = `url('/api/channels/block11_ch${id}.png')`
     })
   }
 
@@ -115,7 +125,7 @@ export class RightPanel {
     this.newClassEl.textContent = `${view.classId} (${view.className})`
     view.channelIds.forEach((id, i) => {
       this.newChannelsEls[i].textContent = String(id)
-      this.newChannelImgs[i].style.backgroundImage = `url('/api/channels/${id}.png')`
+      this.newChannelImgs[i].style.backgroundImage = `url('/api/channels/block11_ch${id}.png')`
     })
   }
 
@@ -177,7 +187,7 @@ const TEMPLATE = /* html */ `
       <div class="thumb-image">
         <canvas></canvas>
       </div>
-      <div class="thumb-caption">small version of og image with square around attended to patch</div>
+      <div class="thumb-caption">current patch</div>
     </div>
     <div class="header-text">
       <div class="title">classification by DeiT-Tiny (Meta)</div>

@@ -24,8 +24,9 @@
 /** Internal texture/FBO resolution. Independent of display size. */
 const TEX_SIZE = 512
 
-/** Time constant for exponential approach. ~3τ = visually settled. */
-const TIME_CONSTANT_S = 0.35
+/** Default time constant for exponential approach. ~3τ = visually settled.
+ *  Mutable per-instance via `setTimeConstant()`. */
+const DEFAULT_TIME_CONSTANT_S = 0.35
 
 const VERT_SRC = `#version 300 es
 in vec2 a_position;
@@ -45,7 +46,18 @@ out vec4 fragColor;
 void main() {
   vec4 a = texture(u_current, v_uv);
   vec4 b = texture(u_target, v_uv);
-  fragColor = mix(a, b, u_k);
+  vec4 result = mix(a, b, u_k);
+  // Snap to target where the lerp is below a barely-perceptible delta.
+  // Without this, RGBA8 ping-pong textures asymptote to "almost target
+  // but off by a small amount," leaving a faint colored residue that
+  // never clears. 5/255 ≈ 0.02 is well below visual JND while letting
+  // the snap fire many frames earlier than a tighter threshold would.
+  vec4 diff = abs(result - b);
+  float maxDiff = max(max(diff.r, diff.g), max(diff.b, diff.a));
+  if (maxDiff < 0.04) {
+    result = b;
+  }
+  fragColor = result;
 }`
 
 const DISPLAY_FRAG_SRC = `#version 300 es
@@ -102,6 +114,9 @@ export class MorphCanvas {
   private currentBitmap: ImageBitmap | null = null
 
   private resizeObserver: ResizeObserver
+
+  /** Live-tunable; controls morph speed. See setTimeConstant(). */
+  private timeConstantS: number = DEFAULT_TIME_CONSTANT_S
 
   constructor() {
     this.canvas = document.createElement('canvas')
@@ -200,6 +215,21 @@ export class MorphCanvas {
     this.uploadStandardized(this.targetTex, bitmap)
   }
 
+  /**
+   * Update the exponential time constant (seconds) used to chase the
+   * target. Smaller = snappier; larger = slower morph. Takes effect on
+   * the next animation frame.
+   */
+  setTimeConstant(seconds: number): void {
+    this.timeConstantS = Math.max(0.01, seconds)
+  }
+
+  /** Read current time constant. Useful for callers scheduling
+   *  follow-up actions timed to morph completion. */
+  getTimeConstant(): number {
+    return this.timeConstantS
+  }
+
   /** Most recent source bitmap (i.e. last `setImage` arg). */
   getCurrentBitmap(): ImageBitmap | null {
     return this.currentBitmap
@@ -269,7 +299,7 @@ export class MorphCanvas {
     const gl = this.gl
 
     // ---- pass 1: render mix(current, target, k) into the off slot ----
-    const k = 1 - Math.exp(-dt / TIME_CONSTANT_S)
+    const k = 1 - Math.exp(-dt / this.timeConstantS)
     const srcTex = this.currentSlot === 0 ? this.texA : this.texB
     const dstFbo = this.currentSlot === 0 ? this.fboB : this.fboA
 
